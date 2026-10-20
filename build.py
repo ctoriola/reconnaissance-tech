@@ -339,6 +339,7 @@ def document(c, title, description, body, current=""):
 {body}
 </main>
 {footer(c)}
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
 <script src="{c.asset("js/main.js")}" defer></script>
 </body>
 </html>

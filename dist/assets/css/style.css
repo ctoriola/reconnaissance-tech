@@ -28,7 +28,8 @@
   --pad: clamp(24px, 4.4vw, 72px);
   --display: "Sora", "Inter", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --ease: cubic-bezier(.2, .7, .1, 1);
+  --ease: cubic-bezier(.22, 1, .36, 1);        /* expo-out: quick start, long soft landing */
+  --ease-press: cubic-bezier(.34, 1.56, .64, 1); /* slight overshoot for release */
   color-scheme: dark;
 }
 
@@ -655,3 +656,67 @@ a:hover > .circle-btn, .circle-btn:hover { background: var(--ink); color: #fff; 
 .hero-badges a:first-child .badge-tip::before { left: 33px; }
 .hero-badges a:hover .badge-tip, .hero-badges a:focus-visible .badge-tip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 .hero-badges a:first-child:hover .badge-tip, .hero-badges a:first-child:focus-visible .badge-tip { transform: none; }
+
+
+/* ==========================================================================
+   Motion polish: smooth scroll, press feedback, hover depth, accordion,
+   staggered reveals, page transitions
+   ========================================================================== */
+
+/* Lenis smooth scrolling (native smooth-scroll would fight it) */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* press feedback: everything clickable dips slightly, then springs back */
+.pill, .circle-btn, .tab, .mega-tab, .burger, .row > summary, .nav-link, .link-underline {
+  transition-property: transform, background, color, border-color, box-shadow, gap, opacity;
+  transition-duration: .45s; transition-timing-function: var(--ease-press);
+}
+.pill:active, .circle-btn:active, .tab:active, .mega-tab:active, .burger:active { transform: scale(.95); transition-duration: .12s; }
+.row > summary:active .num-circle { transform: scale(.9); }
+.num-circle { transition: transform .35s var(--ease-press), background .3s, color .3s, border-color .3s; }
+.row:hover .num-circle, .row[open] .num-circle { background: var(--ink); color: #fff; border-color: var(--ink); }
+.row:hover .arrow { transform: translate(2px, 2px); }
+.row[open]:hover .arrow { transform: rotate(-90deg) translate(2px, 2px); }
+
+/* hover depth */
+.pill { box-shadow: 0 0 0 0 rgba(65, 82, 230, 0); }
+.pill--white:hover { box-shadow: 0 10px 30px -10px rgba(170, 182, 255, .55); }
+.pill--ink:hover { box-shadow: 0 12px 30px -12px rgba(43, 55, 180, .7); }
+.g-card, .quote, .member, .rail-card, .contact-card {
+  transition: transform .6s var(--ease), box-shadow .6s var(--ease), background .5s var(--ease), border-color .4s,
+              flex-basis .7s var(--ease), min-height .7s var(--ease);
+}
+.g-card:hover, .quote:hover, .member:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -28px rgba(11, 12, 22, .35); }
+.rail-card:hover { box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .6); }
+.logos > * img { transition: filter .5s var(--ease), opacity .5s var(--ease), transform .5s var(--ease); }
+.logos > *:hover img { transform: scale(1.05); }
+.magnetic { will-change: transform; transition: transform .5s var(--ease); }
+
+/* accordion: the JS animates height; the panel content fades/slides in after */
+.row-body { overflow: hidden; }
+.row-panel { animation: none; }
+.row[open] .row-panel { animation: rowIn .6s var(--ease) both; }
+.row { transition: background .5s var(--ease), margin .5s var(--ease), padding .5s var(--ease), border-radius .5s var(--ease); }
+
+/* staggered reveals: children of a revealed group arrive one after another */
+.js .reveal .reveal-child { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: calc(var(--d, 0) * 70ms); }
+.js .reveal.is-in .reveal-child { opacity: 1; transform: none; }
+.js .reveal { transition-duration: 1s; }
+
+/* hero: wordmark drifts and the copy eases away as you scroll past */
+.wordmark, .hero-copy { will-change: transform; }
+
+/* cross-page transitions (Chrome / Edge / Safari 18.2+; others just navigate) */
+@view-transition { navigation: auto; }
+::view-transition-old(root) { animation: vt-out .28s var(--ease) both; }
+::view-transition-new(root) { animation: vt-in .5s var(--ease) both; }
+@keyframes vt-out { to { opacity: 0; transform: translateY(-10px); } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(14px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal .reveal-child { opacity: 1; transform: none; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}

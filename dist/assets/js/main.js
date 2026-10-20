@@ -114,16 +114,75 @@
     });
   });
 
-  // ---------- accordion rows: one open at a time per list
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  // ---------- smooth, inertial scrolling (Lenis); native scrolling if unavailable or reduced motion
+  let lenis = null;
+  if (window.Lenis && !reduceMotion) {
+    lenis = new window.Lenis({ duration: 1.15, easing: (t) => 1 - Math.pow(1 - t, 4), smoothWheel: true, anchors: { offset: -90 } });
+    const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); };
+    requestAnimationFrame(raf);
+    // in-page anchors glide instead of jumping
+    $$('a[href^="#"]').forEach((a) => a.addEventListener('click', (ev) => {
+      const target = a.getAttribute('href').length > 1 && document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      ev.preventDefault();
+      lenis.scrollTo(target, { offset: -90 });
+    }));
+  }
+  // the drawer and menus scroll on their own
+  $$('.drawer, .mega, .rail').forEach((el) => el.setAttribute('data-lenis-prevent', ''));
+  if (lenis && drawer && burger) {
+    burger.addEventListener('click', () => lenis.stop());
+    $('[data-close]', drawer).addEventListener('click', () => lenis.start());
+    document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') lenis.start(); });
+  }
+
+  // ---------- accordion rows: height-animated, one open at a time per list
+  const animateRow = (row, open) => {
+    row._target = open;
+    if (row._anim) row._anim.cancel();
+    const summary = $('summary', row);
+    if (reduceMotion) { row.open = open; return; }
+    const start = row.offsetHeight;
+    if (open) row.open = true;
+    const end = open ? row.offsetHeight : summary.offsetHeight;
+    row.style.overflow = 'hidden';
+    row._anim = row.animate({ height: [`${start}px`, `${end}px`] }, { duration: open ? 560 : 420, easing: 'cubic-bezier(.22, 1, .36, 1)' });
+    row._anim.onfinish = () => { if (!open) row.open = false; row.style.overflow = ''; row._anim = null; };
+    row._anim.oncancel = () => { row.style.overflow = ''; };
+  };
   $$('.rows').forEach((list) => {
     const rows = $$('details.row', list);
-    rows.forEach((row) => row.addEventListener('toggle', () => {
-      if (row.open) rows.forEach((r) => { if (r !== row) r.open = false; });
+    rows.forEach((row) => $('summary', row).addEventListener('click', (ev) => {
+      ev.preventDefault();
+      const opening = !(row._target ?? row.open); // respects a row clicked mid-animation
+      rows.forEach((r) => { if (r !== row && r.open) animateRow(r, false); });
+      animateRow(row, opening);
     }));
   });
 
-  // ---------- reveal on scroll
+  // ---------- magnetic buttons: CTAs lean toward the cursor
+  if (finePointer && !reduceMotion) {
+    $$('.circle-btn, .header-cta .pill, .cta-band .pill, .hero-actions .link-underline').forEach((el) => {
+      el.classList.add('magnetic');
+      el.addEventListener('mousemove', (ev) => {
+        const r = el.getBoundingClientRect();
+        const x = (ev.clientX - r.left - r.width / 2) * 0.25;
+        const y = (ev.clientY - r.top - r.height / 2) * 0.35;
+        el.style.transform = `translate(${x}px, ${y}px)`;
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+  }
+
+  // ---------- reveal on scroll, with grouped children arriving one by one
   const reveals = $$('.reveal');
+  reveals.forEach((el) => {
+    $$(':scope .grid-cards > *, :scope .stats > *, :scope .rows > *, :scope .quotes > *, :scope .team > *, :scope .chips:not([hidden]) > *, :scope .badges > *', el)
+      .forEach((child, i) => { child.classList.add('reveal-child'); child.style.setProperty('--d', Math.min(i, 10)); });
+  });
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => entries.forEach((en) => {
       if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
@@ -131,6 +190,24 @@
     reveals.forEach((el) => io.observe(el));
   } else {
     reveals.forEach((el) => el.classList.add('is-in'));
+  }
+
+  // ---------- hero parallax: the wordmark drifts down, the copy eases away
+  const heroWord = $('.hero .wordmark');
+  const heroCopy = $('.hero .hero-copy');
+  if (heroWord && !reduceMotion) {
+    let ticking = false;
+    const update = () => {
+      const y = Math.min(window.scrollY, 900);
+      heroWord.style.transform = `translate3d(0, ${y * 0.22}px, 0)`;
+      if (heroCopy) {
+        heroCopy.style.transform = `translate3d(0, ${y * -0.08}px, 0)`;
+        heroCopy.style.opacity = String(Math.max(0, 1 - y / 650));
+      }
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
   }
 
   // ---------- enquiry form: compose an email (static hosting has no backend)
