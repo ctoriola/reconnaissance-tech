@@ -1,0 +1,65 @@
+{
+  "slug": "industries/travel-and-hospitality",
+  "kicker": "Industries",
+  "word": "Travel",
+  "title": "Travel & Hospitality Solutions",
+  "body": "Aiding travel agencies, hospitality providers, travellers and airlines by leveraging on advanced technology solutions.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "Cutting-edge technologies revolutionizing the travel and hospitality industry",
+      "items": [
+        {
+          "value": "2k+",
+          "label": "Booked Flights",
+          "body": "Fully integrated solutions with top-tier flight booking service providers"
+        },
+        {
+          "value": "150k+",
+          "label": "Service Bookings",
+          "body": "Onine bookings to find preferential travel services and providers"
+        },
+        {
+          "value": "42+",
+          "label": "Domain Experts",
+          "body": "Experts with trechnology expertise in the travel domain"
+        },
+        {
+          "value": "30+",
+          "label": "Travel Projects",
+          "body": "Proven track record of successfully delivering fully functional travel solutions"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Travel and Hospitality Software Solutions",
+      "body": "Travel application development for the Travel & Hospitality industry including Air Transport, Hotel Car Rental, Travel Management & Services all over the world",
+      "items": [
+        {
+          "title": "Hotel Booking Portal",
+          "body": "Custom hotel booking app providing real-time availability of rooms, comparison between hotels and checkout options."
+        },
+        {
+          "title": "Flight Booking Portal",
+          "body": "Flight Booking Engine B2B and B2C travel portal with complete, comparative Airline information and fares of all flights with quick payment option."
+        },
+        {
+          "title": "Taxi Booking Application",
+          "body": "On demand taxi booking application for iOS and Android with a host of features such as in-app calling, carpooling, time & cost estimate and more."
+        },
+        {
+          "title": "Places of Interest Apps",
+          "body": "Attraction / Shops / Restaurant / Club Directory bifurcated in Categories"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "industries/real-estate-and-construction",
+  "kicker": "Industries",
+  "word": "Estate",
+  "title": "Real Estate & Construction Software Solutions",
+  "body": "Transforming the Real Estate Industry with technology solutions to streamline real estate process and smarter collaboration between customers, agents, real estate companies and brokers.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "Real estate technology solutions to simplify all transactions, while maintaining accuracy.",
+      "items": [
+        {
+          "value": "60k+",
+          "label": "Properties Published",
+          "body": "Listed and published properties across our solutions"
+        },
+        {
+          "value": "10k+",
+          "label": "Deals Closed",
+          "body": "Property deals closed across all solutions"
+        },
+        {
+          "value": "800+",
+          "label": "Brokers",
+          "body": "Effortless work and management for brokers"
+        },
+        {
+          "value": "40k+",
+          "label": "Agreements Signed",
+          "body": "Secure transactions and agreements"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Real Estate & Construction Technology Solutions",
+      "body": "Cost-effective real estate and property solutions to give your organization a distinct edge and bring about transformation by optimizing results.",
+      "items": [
+        {
+          "title": "Property Marketplace",
+          "body": "Get your real estate property listings in front of interested browsers to buy, sell, and rent residential and commercial properties"
+        },
+        {
+          "title": "AR/VR Property Tool",
+          "body": "AR/VR property tools to give clients an immersive and interactive walkthrough of the property, anytime, anywhere."
+        },
+        {
+          "title": "Estate Management Tool",
+          "body": "Estate management tool allow for property owners to manage property requests from rental, agreement, security, maintenance, etc."
+        },
+        {
+          "title": "Property Auction Portal",
+          "body": "Bidding engine and a common platform to display details of properties to be auctioned online."
+        }
+      ]
+    }
+  ]
+}

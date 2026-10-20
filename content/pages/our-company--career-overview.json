@@ -1,0 +1,31 @@
+{
+  "slug": "our-company/career-overview",
+  "kicker": "Who We Are",
+  "word": "Careers",
+  "title": "Career Overview",
+  "body": "Explore opportunities with Reconnaissance Technologies that are both challenging and rewarding. Experience collaborative and rewarding environment.",
+  "cta": {
+    "label": "Apply Now",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "eyebrow": "Join Our Family",
+      "title": "Our strength comes from our people.",
+      "body": "Here, It's all about exploring new ideas and believing in dreams. We achieve the impossible, innovate and make meaningful difference for our clients, people and the society. Together, we take bold steps, support each other, work together, and achieve shared vision. Our culture drives us and our values define us. We are driven by people to strive relentlessly and constantly innovate, improve our teams and our services to become the best",
+      "aside": {
+        "title": "Charting a Path to Success",
+        "body": "Navigating Challenges, Seizing Opportunities, and Achieving Excellence"
+      }
+    },
+    {
+      "type": "openings",
+      "eyebrow": "Current Openings",
+      "title": "Join Reconnaissance Technologies",
+      "body": "We are always looking to work with talented people with an entrepreneurial outlook, a drive to succeed and the confidence to change the world with technology.",
+      "empty": "No Openings Available at This Time",
+      "email": "hr@reconnaissancetechnologies.com"
+    }
+  ]
+}

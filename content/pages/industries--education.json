@@ -1,0 +1,65 @@
+{
+  "slug": "industries/education",
+  "kicker": "Industries",
+  "word": "Education",
+  "title": "Education & e-Learning Solutions Provider",
+  "body": "Craft bespoke educational e-learning solutions to propel growth, enhance efficiency, and drive high performance.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "Custom e-Learning software development services that can change the course of learning for education institutes and students.",
+      "items": [
+        {
+          "value": "50k+",
+          "label": "Instructors",
+          "body": "Platform used by instructors around the world"
+        },
+        {
+          "value": "31M+",
+          "label": "Examination",
+          "body": "End-to-end assessment solutions for exams and quizzes"
+        },
+        {
+          "value": "7M+",
+          "label": "Access",
+          "body": "Reaching students for self-paced and school-assisted learning solutions"
+        },
+        {
+          "value": "32k+",
+          "label": "Courses",
+          "body": "On-demand and regularly updates courses with labs, tests, and practice exams"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Education & e-Learning Software Solutions",
+      "body": "Our experts has successfully designed and developed technology solutions for the education sector that improve efficiency, enhance learning and facilitate students, instructors and administrators.",
+      "items": [
+        {
+          "title": "School Management System",
+          "body": "Our school management system is specifically designed for educational institutes, schools and universities to help teachers & school administrators to manage all student & curriculam related data through centralized platform."
+        },
+        {
+          "title": "Virtual Classroom",
+          "body": "Our virtual classroom software solutions utilize video streaming and online classes to establish a learning loop between students and teachers. Virtual classroom solutions encompass video classes, course materials online, assignments evaluation, online tests and students assessment all in one place."
+        },
+        {
+          "title": "Learning Management System",
+          "body": "Learning Management system oversees the management and delivery of eLearning courses. It can be extensively used by businesses, national & local government agencies, educational institutions and online/eLearning-based institutions to plan, implement and assess learning process online."
+        },
+        {
+          "title": "Research & Academic Scholars' Portal",
+          "body": "Our solution provides a channel for researchers and academic experts and scholars to share their subject expertise by resolving doubts through video chat, whiteboard, file sharing and other powerful objects."
+        }
+      ]
+    }
+  ]
+}

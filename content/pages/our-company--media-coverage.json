@@ -1,0 +1,20 @@
+{
+  "slug": "our-company/media-coverage",
+  "kicker": "Insights",
+  "word": "Media",
+  "title": "Media Coverage",
+  "body": "A showcase of our efforts, our capabilities and our commitment.",
+  "cta": {
+    "label": "Get In Touch",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "eyebrow": "Celebrate With Us",
+      "title": "Awards & Accolades in recognition of our journey of excellence",
+      "body": "The awards bestowed upon us strengthen our determination to offer high-quality service to the people who matter the most – our clients.",
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "our-company/development-methodology",
+  "kicker": "Who We Are",
+  "word": "Method",
+  "title": "Development Methodology",
+  "body": "Our development methodologies are crafted in a way to help clients achieve their business goals within the predefined deadline and budget.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "eyebrow": "Development Methodologies",
+      "title": "Methodologies for quick project turnaround in fast-paced environments.",
+      "body": "Reconnaissance Technologies propels businesses to the summit of success through innovative technology solutions. The digital age and proliferation of technology makes it imperative for businesses to transform. We have worked for clients in almost every industry and believe each and every project has different needs and requirements. We at Reconnaissance Technologies offer different methodologies based on business dynamics, customer expectations, timeline, budget allocations and level of expertise required and experience of resources.",
+      "items": []
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Unleash Innovation, Embrace Efficiency",
+      "title": "Transforming Visions into Reality with Our Cutting-Edge Development Methodology",
+      "body": "Explore our diverse development methodologies and pick the most suitable one as per your needs.",
+      "items": [
+        {
+          "title": "Agile Methodology",
+          "body": "Agile is one of the most popular development methodologies focussed on collaboration. This method introduces new changes with continuous communication and collaboration with short-term software development cycles called iterations.",
+          "points": [
+            "Minimizes risk and focuses on people over processes.",
+            "Divide tasks into smaller modules called sprints.",
+            "Predetermine scope of work and assign dedicated people to teams.",
+            "Bifurcate work till the final release."
+          ]
+        },
+        {
+          "title": "Waterfall Methodology",
+          "body": "This is one of the most traditional and commonly used software development methodologies for software development. Linear in nature with projects progressing in stages, Waterfall methodology depends on completion of one stage precedes the other.",
+          "points": [
+            "Defined scope, objective and expectations before the start of the development process.",
+            "Linear sequential flow of development process.",
+            "Most effective method for small projects in cases where the requirements are well defined."
+          ]
+        },
+        {
+          "title": "Spiral Methodology",
+          "body": "Spiral development, a dynamic approach embraced with zeal, iterative cycles, progress it does reveal. Risk management intertwined, a guiding light, flexibility and adaptability, in every project's flight.",
+          "points": [
+            "Iterative cycles, allowing for continuous refinement and enhancement of a project",
+            "Flexibility allows teams to respond effectively to shifting priorities, technological advancements, or unexpected challenges encountered during development.",
+            "Stakeholder engagement to ensure regular feedback from clients and end-users is solicited at various stages, ensuring that the evolving product aligns with their expectations."
+          ]
+        },
+        {
+          "title": "Scrum Methodology",
+          "body": "This methodology is ideal for projects with rapidly changing, dynamic or highly evolving requirements. Scrum development kicks off with a brief planning for each sprint, daily scrum meetings to highlight project progress, and a final review. It is ideal for managing projects which does not have well defined requirements and feedback from the client.",
+          "points": [
+            "Development process moves in a series of sprints or iterations.",
+            "Flexibility to adapt to emerging business realities.",
+            "Fast feedback cycle to stay focused and discover problems."
+          ]
+        }
+      ]
+    }
+  ]
+}

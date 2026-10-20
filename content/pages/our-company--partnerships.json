@@ -1,0 +1,20 @@
+{
+  "slug": "our-company/partnerships",
+  "kicker": "Who We Are",
+  "word": "Partners",
+  "title": "Technology Partnerships",
+  "body": "Partnering for Technical Excellence & Innovation to Unlock New Era of Possibilities",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "eyebrow": "",
+      "title": "Technology Partnerships to Generate Sustainable Business Value",
+      "body": "Our alliances provide access to a wealth of diverse tools and resources to develop high-quality solutions that align with client needs, ultimately resulting in business success.",
+      "items": []
+    }
+  ]
+}

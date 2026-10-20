@@ -1,0 +1,98 @@
+{
+  "slug": "service-model/engagement-model",
+  "kicker": "Service Models",
+  "word": "Engage",
+  "title": "Engagement Model",
+  "body": "Engagement Models provides prudent and realistic pricing models for delivering complete value for money. To support our clients, we have a set of transparent pricing strategies coupled with the combination of ‘right’ elements that are at par with the industry standards.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "cards",
+      "eyebrow": "We Offer",
+      "title": "Engagement Model to meet your business needs",
+      "body": "Reconnaissance Technologies offers flexible engagement models as we believe in delivering complete value for money to our clients & their specific needs and our pricing models are crafted keeping mutual interests in mind.",
+      "items": [
+        {
+          "title": "Transparency",
+          "body": "Get in all our workflows, processes, interactions and delivery updates."
+        },
+        {
+          "title": "Flexibility",
+          "body": "We tweak our engagement models to suit and fix your business needs."
+        },
+        {
+          "title": "Cost Effective",
+          "body": "Blending optimized costing with an extended managed team for pricing effectiveness."
+        },
+        {
+          "title": "Quality",
+          "body": "Key element to provide utmost attention to every stage of the process of delivery."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Pricing Models",
+      "title": "Fixed Price and Time & Material engagements",
+      "body": "",
+      "items": [
+        {
+          "title": "Fixed Price Model",
+          "body": "Fixed price model is the best choice for projects with well-defined scope and requirements. In this model, all project requirements are predefined right from the beginning of the development process. This model works the best for small businesses and medium projects with limited or fixed budgets. Along with the time and cost, the core objectives and deliverables for the project are also pre-defined.",
+          "points": [
+            "The fixed model has exact budget defined in advance",
+            "Billing is based on milestones completed",
+            "Change in scope needs client approval, ensuring budget never exceeds",
+            "Low risk or risk-free model for service provider and client as cost and the timeline are fixed before the project is initiated"
+          ]
+        },
+        {
+          "title": "Time and Material Model",
+          "body": "This model is best suited for projects where scope is not clearly defined and requirements are dynamic and constantly changing. The Time & Material model works if it is not possible to implement specifics or divide a project into several smaller stages. This option allows an hourly, daily, weekly or monthly rate for the amount of work, tasks, resources, or other expenses in the development process. Time and material offers the flexibility to modify project specifications, explore new activity and make changes to the number of project resources depending upon the client’s evolving lifecycle.",
+          "points": [
+            "Best option when the project scope is constantly changing",
+            "Option for client to make hourly, daily, weekly or monthly payment",
+            "Flexible model, allowing client to experiment with new activity and requirements",
+            "Change project resources based on the proj ect's evolving lifecycle."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to start your dream project?",
+      "body": "Experience the power of our Team's prowess and engage in Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Partners Are",
+      "title": "Visionary Businesses and Diverse Clientele",
+      "body": "Explore our proven track record of successfule project delivery to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.",
+      "items": [
+        {
+          "title": "Startups",
+          "body": "From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality."
+        },
+        {
+          "title": "Product Companies",
+          "body": "We have partnered with product-focused businesses, assisting them in developing and enhancing their products and services to meet market demands and stay ahead of the competition."
+        },
+        {
+          "title": "Agencies",
+          "body": "Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire."
+        },
+        {
+          "title": "Enterprises",
+          "body": "Our extensive experience working with large enterprises enables us to provide technology solutions that handle high volumes of traffic, large data sets, and complex business processes, ensuring optimal performance."
+        }
+      ]
+    }
+  ]
+}

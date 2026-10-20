@@ -1,0 +1,111 @@
+{
+  "slug": "our-services/iot-development",
+  "kicker": "Services",
+  "word": "IoT",
+  "title": "IoT Application Development",
+  "body": "Experience connected and smart living with IoT solutions with right infrastructure and IoT platform.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "cards",
+      "eyebrow": "We Offer",
+      "title": "Innovation with Internet of Things (IoT) Solutions",
+      "body": "Businesses can capitalize on our IoT solutions and Services to improve operational efficiencies, enhance user experiences and create a digital business by connecting people, process and information together",
+      "items": [
+        {
+          "title": "Smart Cities",
+          "body": "Smart City IoT Solutions to empower cities and citizens to deliver innovative digital services. Leveraging the technology of the Internet of Things (IoT) and increased usage of smart devices, it is possible to gather accurate and near real-time information about people, their behavior, traffic and other utilities."
+        },
+        {
+          "title": "Home Automation",
+          "body": "IoT based home automation solution to help users to control lights, air conditioners and other appliances. Our IoT based home automation solutions enable clients to operate systems for music, video, lights, climate and security through smartphone, tablet, touch panel or keypad. We aim to give clients complete peace of mind by building solutions that enhance their comfort and security at home."
+        },
+        {
+          "title": "Smart Energy Monitoring",
+          "body": "Smart energy monitoring IoT solutions to eliminate waste, reduce and control current level of energy uses for optimum utilization of resources. Reconnaissance Technologies is focused on offering solutions to provide companies with data, insights and systems to drive energy monitoring and sustainability."
+        },
+        {
+          "title": "Infrastructure Automation",
+          "body": "Our infrastructure automation solutions using IoT resolve infrastructure and cities related problems such as street lighting, traffic control, surveillance and congestion. We offer a comprehensive range of robust and proven infrastructure automation services and solutions to deliver strategic value for our customer’s business."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to start your dream project?",
+      "body": "We can get you there.",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Frameworks We Use",
+      "body": "IoT expertise to improve operational efficiencies, enhance user experiences and create a digital business by connecting people, process and information together.",
+      "items": [
+        {
+          "title": "IBM Watson IoT",
+          "body": "We offer strong background in IBM Watson IoT platform, a managed, cloud-hosted service designed to simplify to your IoT project"
+        },
+        {
+          "title": "Google Cloud IoT",
+          "body": "Our team will help you to add the power of Google Cloud IoT to securely connect and manage IoT devices ranging to millions."
+        },
+        {
+          "title": "AWS IoT Core",
+          "body": "Expertise in AWS IoT Core managed cloud service to connect devices easily and securely with cloud applications and other devices."
+        },
+        {
+          "title": "ThingWorx",
+          "body": "We specialise in ThingWorx, an IoT platform to build and scale mission critical IoT systems in a secure manner."
+        },
+        {
+          "title": "GE Predix",
+          "body": "Reconnaissance Technologies offers a background in GE Predix to build apps that connect people with industrial machines for business outcomes."
+        },
+        {
+          "title": "Losant",
+          "body": "We use Losant, an easy-to-use and powerful Enterprise IoT Platform to build scalable, secure and real-time connected solutions."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Transform Your Business",
+      "body": "Experience the Transformational Impact of IoT Solutions for Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Partners Are",
+      "title": "Visionary Businesses and Diverse Clientele",
+      "body": "Explore our proven track record of delivering IoT application solutions to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.",
+      "items": [
+        {
+          "title": "Startups",
+          "body": "From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality."
+        },
+        {
+          "title": "Product Companies",
+          "body": "We have partnered with product-focused businesses, assisting them in developing and enhancing their IoT solutions requirements. Services to meet market demands and stay ahead of the competition."
+        },
+        {
+          "title": "Agencies",
+          "body": "Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire."
+        },
+        {
+          "title": "Enterprises",
+          "body": "Our extensive experience working with large enterprises enables us to provide IoT solutions for their use cases, ensuring optimal performance."
+        }
+      ]
+    }
+  ]
+}

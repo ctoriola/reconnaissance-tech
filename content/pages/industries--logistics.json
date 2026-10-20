@@ -1,0 +1,65 @@
+{
+  "slug": "industries/logistics",
+  "kicker": "Industries",
+  "word": "Logistics",
+  "title": "Transport & Logistics IT Solutions",
+  "body": "Our expertise in integrated logistics & transport IT solutions avails us the edge to meet clients' needs and add value to their businesses in many ways than one.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "Technology solutions in transport & logistics industry to oversee the inward and outward flow of goods from and across various points to the desired destinations.",
+      "items": [
+        {
+          "value": "15k+",
+          "label": "Shipments",
+          "body": "Timely shipment of consignments"
+        },
+        {
+          "value": "5k+",
+          "label": "Active Users",
+          "body": "Customers satisfaction and dependability."
+        },
+        {
+          "value": "420+",
+          "label": "Driver Access",
+          "body": "Drivers management and tracking solution"
+        },
+        {
+          "value": "30+",
+          "label": "Warehouses",
+          "body": "Making transportation and product management and inventory super easy."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Transport & Logistics Solutions Development",
+      "body": "Comprehensive technology solutions to increase real-time visibility, optimize processes, improve productivity and meet delivery benchmarks.",
+      "items": [
+        {
+          "title": "Courier Delivery Solution",
+          "body": "Software solutions for domestic and international courier services to manage and track package delivery."
+        },
+        {
+          "title": "Warehouse Management Solution",
+          "body": "Inbound and outbound logistics in the field of supply chain management to increase the reliability of distribution networks, as well as reduce transport and storage costs."
+        },
+        {
+          "title": "Fleet Management Solution",
+          "body": "Fleet management applications to monitor and manage the performance of commercial motor vehicles such as cars, vans, trucks, specialist vehicles & trailers."
+        },
+        {
+          "title": "Transport Management Solution",
+          "body": "Help businesses manage, plan and optimize the physical movement of goods, both incoming and outgoing as well as compliance."
+        }
+      ]
+    }
+  ]
+}

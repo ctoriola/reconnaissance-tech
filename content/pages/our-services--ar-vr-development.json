@@ -1,0 +1,111 @@
+{
+  "slug": "our-services/ar-vr-development",
+  "kicker": "Services",
+  "word": "AR / VR",
+  "title": "AR/VR App Development",
+  "body": "Reconnaissance Technologies AR/VR solutions create immersive experiences, transforming the way your interact with you customers. Whether it's for training, marketing, or product visualization, these technologies offer a new dimension of engagement",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "cards",
+      "eyebrow": "Industry Application",
+      "title": "Industry Use Cases for Our AR/VR Development Solution",
+      "body": "Our expert team in Augmented Reality (AR) and Virtual Reality (VR) technologies delivers various solutions across different industries and applications",
+      "items": [
+        {
+          "title": "Training and Education",
+          "body": "Our expertise in creating immersive training simulations for various fields like healthcare (surgical training), aviation (flight simulations), military training, and more. It's also employed in education for interactive learning experiences"
+        },
+        {
+          "title": "Gaming and Entertainment",
+          "body": "Gaining significant traction, our VR solution offers immersive gaming experiences. Also, blending the virtual world with the real one, in gaming apps such as Pokémon GO"
+        },
+        {
+          "title": "Healthcare",
+          "body": "These technologies assist in medical training, patient care, pain management, and therapies. For instance, utilizing VR for exposure therapy in treating phobias or PTSD"
+        },
+        {
+          "title": "Marketing and Advertising",
+          "body": "AR solution for marketing campaigns to create interactive experiences for consumers. For instance, AR filters on social media platforms or AR-enabled catalogs allowing users to visualize products in their environment before purchasing"
+        },
+        {
+          "title": "Tourism and Hospitality",
+          "body": "VR solution for virtual tours of destinations or hotel rooms, allowing potential travelers to explore and experience places remotely."
+        },
+        {
+          "title": "Remote Collaboration and Communication",
+          "body": "VR solution that enables remote teams to collaborate in virtual environments, fostering teamwork and reducing the need for physical presence"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "AR/VR Integration and Development to Revolutionize Customer Interactions",
+      "body": "We offer complete AR/VR development services for various industries and much more. Whether you are looking to build your own AR/VR enabled games, integrating AR/VR in your software products, we provide differentiated services exactly tailored to meet your needs.",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Frameworks We Use",
+      "body": "Our experts specialize in frameworks for AR/VR development services.",
+      "items": [
+        {
+          "title": "ARCore",
+          "body": "By utilizing ARCore's capabilities, Reconnaissance Technologies' compelling AR solutions ranges from AR-based navigation, gaming, educational tools, interior design apps, to industrial training simulations and more, offering innovative and engaging experiences to your users"
+        },
+        {
+          "title": "Unreal Engine",
+          "body": "Reconnaissance Technologies leverages Unreal Engine's powerful capabilities to develop augmented reality (AR) solutions. Unreal Engine is renowned for its robustness in creating immersive experiences and its suitability for AR/VR applications due to its high-fidelity rendering and versatile toolset"
+        },
+        {
+          "title": "Vuforia",
+          "body": "By leveraging Vuforia's tools and expertise in AR development, Reconnaissance Technologies creates innovative and tailored solutions that meet your specific needs, enhancing various aspects of your businesses or user experiences through augmented reality"
+        },
+        {
+          "title": "Apple's ARKit",
+          "body": "By leveraging these features and functionalities provided by ARKit, Reconnaissance Technologies crafts innovative AR solutions for various purposes, such as gaming, education, retail, navigation, and more"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Elevate Your Business with AR/VR",
+      "body": "Experience the Transformational Impact of AR/VR Solutions for Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Partners Are",
+      "title": "Visionary Businesses and Diverse Clientele",
+      "body": "Explore our proven track record of delivering AR/VR solutions to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.",
+      "items": [
+        {
+          "title": "Startups",
+          "body": "From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality."
+        },
+        {
+          "title": "Product Companies",
+          "body": "We have partnered with product-focused businesses, assisting them in developing AR/VR solutions and services to meet market demands and stay ahead of the competition."
+        },
+        {
+          "title": "Agencies",
+          "body": "Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire."
+        },
+        {
+          "title": "Enterprises",
+          "body": "Our extensive experience working with large enterprises enables us to provide AR/VR solutions for their use cases, ensuring optimal performance."
+        }
+      ]
+    }
+  ]
+}

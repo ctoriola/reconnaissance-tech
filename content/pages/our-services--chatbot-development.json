@@ -1,0 +1,107 @@
+{
+  "slug": "our-services/chatbot-development",
+  "kicker": "Services",
+  "word": "Chatbot",
+  "title": "Chatbot Development",
+  "body": "Custom chatbot to build highly sophisticated and intelligent chatbot development solutions for all major platforms.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "cards",
+      "eyebrow": "We Offer",
+      "title": "Custom Chatbot Development to Revolutionize Customer Interactions.",
+      "body": "Empowered with AI, NLP, and Machine Learning technologies, we offer complete chatbot development services for Facebook, Twitter, Slack, Kik, Microsoft and much more. Whether you are looking to build your own chatbots, conversation bots, IVR bots, online chat bots, text bots or messaging bots, we provide differentiated services exactly tailored to meet your needs.",
+      "items": [
+        {
+          "title": "Rule-Based Chatbots",
+          "body": "Description: Rule-based chatbots, also known as decision tree chatbots, operate on predefined rules and patterns. These bots follow a set of programmed instructions and trigger specific responses based on keywords or predetermined pathways. They are effective for simple and structured interactions but may lack flexibility in handling complex queries. Use Case: Customer service inquiries, FAQ bots on websites"
+        },
+        {
+          "title": "AI-Powered Chatbots",
+          "body": "Description: AI-powered chatbots leverage artificial intelligence and natural language processing (NLP) to understand user intent and context. These bots learn from interactions, improving their responses over time. They can handle more complex queries and offer a more human-like conversational experience. Use Case: Virtual assistants, personalized customer support, complex query handling."
+        },
+        {
+          "title": "Hybrid Chatbots",
+          "body": "Description: Hybrid chatbots combine both rule-based and AI-powered approaches. They utilize predefined rules for structured tasks but incorporate AI and machine learning elements for handling more complex and varied interactions. This approach aims to balance reliability and flexibility in conversation. Use Case: Customer support bots that handle both routine and complex inquiries."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to Automate?",
+      "body": "Experience the Transformational Impact of Chatbot Solutions for Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Frameworks We Use",
+      "body": "Our experts specialize in frameworks for bot development services.",
+      "items": [
+        {
+          "title": "Microsoft Chatbot",
+          "body": "We specialize in Azure Bot to build, test, deploy and manage intelligent bots by providing an environment for bot development with Microsoft Bot Framework. Our team creates bots that provide speech, language understanding, Q&A."
+        },
+        {
+          "title": "IBM Watson Chatbot",
+          "body": "Our team can help build, deploy and optimize advanced Chatbots with Watson Assistant. Watson offers data discovery, automated predictive analytics and cognitive capabilities such as natural language dialogue to create a chatbot."
+        },
+        {
+          "title": "Dialogflow Chatbot",
+          "body": "Reconnaissance Technologies specializes in Dialogflow- an end-to-end development suite to build conversational interfaces for web, mobile apps, messaging platforms and IoT devices. Dialogflow Enterprise Edition users can access Google Cloud Support and SLA."
+        },
+        {
+          "title": "Amazon Lex",
+          "body": "Our team is exploring chatbot development with Amazon Lex to build conversational interfaces into application with deep learning functionalities and natural language understanding (NLU)."
+        },
+        {
+          "title": "Chatfuel",
+          "body": "Reconnaissance Technologies is exploring Chatfuel which allows users to create their own bots on Facebook Messenger without coding. With Chatfuel development, businesses can experience higher engagement and retention rates."
+        },
+        {
+          "title": "Facebook Bot",
+          "body": "The Messenger Platform allows organizations to build rich and personalized experiences in Messenger. With Facebook Messenger, we help add controls to improve the user experience in the bots and implement business logic"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Automate Your Customer Care",
+      "body": "Experience the Transformational Impact of Chatbot Solutions for Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Partners Are",
+      "title": "Visionary Businesses and Diverse Clientele",
+      "body": "Explore our proven track record of delivering Chatbot solutions to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.",
+      "items": [
+        {
+          "title": "Startups",
+          "body": "From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality."
+        },
+        {
+          "title": "Product Companies",
+          "body": "We have partnered with product-focused businesses, assisting them in developing and enhancing their Chatbot solutions requirements. Services to meet market demands and stay ahead of the competition."
+        },
+        {
+          "title": "Agencies",
+          "body": "Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire."
+        },
+        {
+          "title": "Enterprises",
+          "body": "Our extensive experience working with large enterprises enables us to provide Chatbot solutions for their use cases, ensuring optimal performance."
+        }
+      ]
+    }
+  ]
+}

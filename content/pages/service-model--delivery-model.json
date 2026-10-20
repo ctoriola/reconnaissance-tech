@@ -1,0 +1,65 @@
+{
+  "slug": "service-model/delivery-model",
+  "kicker": "Service Models",
+  "word": "Delivery",
+  "title": "Global Delivery Model",
+  "body": "Our delivery models are aimed to provide you with utmost flexibility, security and scalability to completely address your business needs and be rest assured to experience consistently high levels of quality.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "cards",
+      "eyebrow": "We Offer",
+      "title": "Delivery Model to meet your business needs",
+      "body": "Reconnaissance Technologies believes that different delivery models are a must in this dynamic changing business landscape where each organization has its own set of needs and working methodology. Our pragmatic approach helps to leverage the latest technology for the benefit of your business through varied delivery models.",
+      "items": [
+        {
+          "title": "Offshore Model",
+          "body": "In this delivery model, the project deliverable and milestones are accomplished at our offshore development center. Offshore delivery model allows clients to leverage dedicated or on-demand skilled resources to overcome skills shortage. Our Offshore delivery models allow excellent synchronization between our teams and your in-house team.",
+          "points": [
+            "Reduced Costs: Low labor costs result in significant reduction of project’s overall cost.",
+            "Skilled Resources: Get high quality work from experienced, talented offshore resources.",
+            "No Overhead: Client doesn’t have to expand infrastructure to scale up.",
+            "Optimal Resources: Clients can have access to the best possible technology, skilled manpower and equipment, depending on budgets.",
+            "Increased Productivity: Project is not majorly affected by time-zone differences."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to start your dream project?",
+      "body": "Experience the power of our Team's prowess and engage in Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Partners Are",
+      "title": "Visionary Businesses and Diverse Clientele",
+      "body": "Explore our proven track record of successfule project delivery to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.",
+      "items": [
+        {
+          "title": "Startups",
+          "body": "From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality."
+        },
+        {
+          "title": "Product Companies",
+          "body": "We have partnered with product-focused businesses, assisting them in developing and enhancing their products and services to meet market demands and stay ahead of the competition."
+        },
+        {
+          "title": "Agencies",
+          "body": "Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire."
+        },
+        {
+          "title": "Enterprises",
+          "body": "Our extensive experience working with large enterprises enables us to provide technology solutions that handle high volumes of traffic, large data sets, and complex business processes, ensuring optimal performance."
+        }
+      ]
+    }
+  ]
+}

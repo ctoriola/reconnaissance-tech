@@ -1,0 +1,142 @@
+{
+  "slug": "our-company/about-us",
+  "kicker": "Who We Are",
+  "word": "About",
+  "title": "Company Overview",
+  "body": "Reconnaissance Technologies, a company creating new capabilities and responding to technology needs of tomorrow, today",
+  "cta": {
+    "label": "Get in Touch",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "eyebrow": "Overview",
+      "title": "Leveraging Technology to Empower Individuals, Businesses & Governments",
+      "body": "Reconnaissance Technologies propels businesses to the summit of success through innovative technology solutions.",
+      "aside": {
+        "title": "Paving the Way for a New Era in Digital Transformation",
+        "body": "Established in 2020, Reconnaissance Technologies has experienced remarkable growth, serving clients in 10 countries. Our comprehensive suite of IT services and industry-tailored solutions extends to over 39 domains globally. Catering to SMEs, MSMEs, and large enterprises, Reconnaissance Technologies empowers organizations to expedite growth and unlock untapped potential. Leveraging profound industry insights and advanced technical capabilities, we concentrate on delivering tangible value through digital transformation. Our proficiency in emerging technologies positions us to guide diverse industries through crucial advancements. Our Watch Word"
+      },
+      "stats": [
+        {
+          "value": "2020",
+          "label": "Established",
+          "body": "Founded in Abuja, Nigeria."
+        },
+        {
+          "value": "10",
+          "label": "Countries",
+          "body": "Clients served across the globe."
+        },
+        {
+          "value": "39+",
+          "label": "Domains",
+          "body": "IT services and industry-tailored solutions."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Watch Word",
+      "title": "Innovation, Integrity, Excellence, Collaboration",
+      "body": "Inspire Trust and Foster an Ethical Culture to Thrive.",
+      "items": [
+        {
+          "title": "Innovation",
+          "body": "We strive for continuous improvement and embrace creative solutions to meet the evolving needs of our clients."
+        },
+        {
+          "title": "Integrity",
+          "body": "We conduct our business with the highest ethical standards, ensuring transparency and trust in all our interactions."
+        },
+        {
+          "title": "Excellence",
+          "body": "We are committed to delivering exceptional quality in every project, setting the benchmark for industry standards."
+        },
+        {
+          "title": "Collaboration",
+          "body": "We value teamwork, encouraging open communication and collaboration to achieve collective success."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Commitment & Dedication",
+      "title": "Our Vision & Mission",
+      "body": "We are deeply committed to the responsible development and deployment technologies according to ethical and societal considerations.",
+      "items": [
+        {
+          "title": "Our Vision",
+          "body": "To be a globally recognized leader in software development, driving technological excellence, and transforming businesses through innovation"
+        },
+        {
+          "title": "Our Mission",
+          "body": "At Reconnaissance Technologies, our mission is to create value for our clients by delivering superior software solutions that enhance efficiency, elevate user experiences, and contribute to the overall success of our partners. We are dedicated to fostering a culture of creativity, collaboration, and continuous learning within our team"
+        }
+      ]
+    },
+    {
+      "type": "team",
+      "eyebrow": "Our Management Team",
+      "title": "The people steering Reconnaissance Technologies",
+      "body": "",
+      "items": [
+        {
+          "name": "Timmy Iwoni",
+          "role": "CEO & CTO",
+          "body": "With a keen eye for emerging trends and a passion for pushing boundaries, Timmy ensures Reconnaissance Technologies remains at the forefront.",
+          "linkedin": "https://www.linkedin.com/in/timmy-iwoni-b4727a42/"
+        },
+        {
+          "name": "Favour Iwoni",
+          "role": "CISO",
+          "body": "With a focus on safeguarding sensitive information and mitigating cybersecurity threats, Favour leads the charge in developing and implementing robust security measures.",
+          "linkedin": "https://www.linkedin.com/in/favour-iwoni-181693112"
+        },
+        {
+          "name": "Oshione Iwoni",
+          "role": "CFO",
+          "body": "With a strategic approach to financial management, Oshione oversees the company's fiscal operations, ensuring financial stability, driving growth initiatives, and maximizing profitability while maintaining fiscal responsibility."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Transform Your Business",
+      "body": "Experience the Transformational Impact of AI & ML Partner with Reconnaissance Technologies for Next-Level Business Success!",
+      "cta": {
+        "label": "Speak with an Expert",
+        "href": "/our-company/contact-us"
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Goals",
+      "title": "Setting Standards and Culture worth Emulating",
+      "body": "Reconnaissance Technologies is committed to maintaining ethical culture and conducting business in a transparent and ethical manner. Our values are the foundation for achieving the highest standards of quality, always promoting collaborative relationships based on trust and mutual respect.",
+      "items": [
+        {
+          "title": "Client Satisfaction",
+          "body": "Achieve and maintain a client satisfaction rate of over 90% by delivering high-quality, innovative solutions that meet or exceed client expectations."
+        },
+        {
+          "title": "Employee Development",
+          "body": "Foster a culture of continuous learning and development, ensuring that our team is equipped with the latest skills and knowledge in the rapidly evolving field of technology."
+        },
+        {
+          "title": "Market Leadership",
+          "body": "Establish Reconnaissance Technologies as a market leader by staying at the forefront of technological advancements and consistently delivering cutting-edge solutions."
+        },
+        {
+          "title": "Global Expansion",
+          "body": "Strategically expand our presence in international markets, building a diverse portfolio of clients and projects."
+        },
+        {
+          "title": "Social Responsibility",
+          "body": "Contribute positively to society by engaging in ethical business practices, promoting environmental sustainability, and actively participating in community initiatives."
+        }
+      ]
+    }
+  ]
+}

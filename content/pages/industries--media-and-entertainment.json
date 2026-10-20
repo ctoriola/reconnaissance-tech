@@ -1,0 +1,65 @@
+{
+  "slug": "industries/media-and-entertainment",
+  "kicker": "Industries",
+  "word": "Media",
+  "title": "Media & Entertainment Solutions Provider",
+  "body": "From mobile apps, subscription management platform, social networking applications to sophisticated new portal, Reconnaissance Technologies offers solutions to ensure media asset flow.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "Media and entertainment solutions for the areas related to digital advertising, live streaming, networking and digital publishing.",
+      "items": [
+        {
+          "value": "20k+",
+          "label": "Songs",
+          "body": "Effortless daily streaming of songs"
+        },
+        {
+          "value": "10M+",
+          "label": "Articles",
+          "body": "Insights and News Articles published"
+        },
+        {
+          "value": "420k+",
+          "label": "Multimedia",
+          "body": "Seamless sharing of multimedia files"
+        },
+        {
+          "value": "30k+",
+          "label": "Artists",
+          "body": "Connecting artists around the globe"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Media & Entertainment Software Solutions",
+      "body": "Web, mobile and software applications involving live streaming, for efficient multimedia content distribution.",
+      "items": [
+        {
+          "title": "Music Streaming Application",
+          "body": "Music Streaming apps for quick access to Artists, Music Tracks, Podcasts, Albums based on your preferences."
+        },
+        {
+          "title": "Video Streaming Application",
+          "body": "Build video streaming apps similar to Netflix to view live video streaming from the comfort of your home."
+        },
+        {
+          "title": "Social Networking Platform",
+          "body": "Social networking platform app development to ensure seamless connectivity with friends and family across the globe."
+        },
+        {
+          "title": "Dating & Matchmaking Apps",
+          "body": "Dating apps development with features such as virtual dates, video-based features, making it simpler to meet more people."
+        }
+      ]
+    }
+  ]
+}

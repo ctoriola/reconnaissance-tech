@@ -1,0 +1,65 @@
+{
+  "slug": "industries/retail-and-ecommerce",
+  "kicker": "Industries",
+  "word": "Retail",
+  "title": "Retail & e-Commerce Solution",
+  "body": "Retail industry IT solutions to create an omnichannel ecosystem aimed at increasing conversions and improving user engagement.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "End-to-end Retail technology solutions to transform shopping experience based on customer expectations and buying preferences.",
+      "items": [
+        {
+          "value": "20+",
+          "label": "Payment Gateways",
+          "body": "Secure payment solutions for online transactions"
+        },
+        {
+          "value": "10M+",
+          "label": "Customers",
+          "body": "Customers reached across the globe"
+        },
+        {
+          "value": "40+",
+          "label": "Countries",
+          "body": "Retail solution delivered across countries"
+        },
+        {
+          "value": "30M+",
+          "label": "Deliveries",
+          "body": "Solution for seamless product delivery"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Retail & e-Commerce Software Solutions",
+      "body": "We are a retail solutions provider offering holistic support to retailers and organizations around the world to deliver excellent user experience and operate more effectively.",
+      "items": [
+        {
+          "title": "B2C e-commerce Platform",
+          "body": "Our online women-centric website with the option to purchase apparel, Shoes, Handbags, Sunglasses, Jewelry, etc."
+        },
+        {
+          "title": "Multi-vendor Marketplace",
+          "body": "Our solution provides a user-friendly platform to the customer to place an online order for a range of the products available in multiple categories."
+        },
+        {
+          "title": "Food Delivery Solution",
+          "body": "Our solution provides an easy to use platform for the food lovers to place an online order from the nearby restaurants."
+        },
+        {
+          "title": "Retail ERP Software",
+          "body": "ERP is a Business Management Solution to integrate all data and business processes across the organization to collect, manage store data from different business activities."
+        }
+      ]
+    }
+  ]
+}

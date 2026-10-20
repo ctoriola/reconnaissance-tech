@@ -1,0 +1,65 @@
+{
+  "slug": "industries/healthcare",
+  "kicker": "Industries",
+  "word": "Health",
+  "title": "Healthcare Technology Solutions Provider",
+  "body": "Healthcare technology solutions & services to improve the patient care from hospital to home. All round hospital and healthcare management solutions.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "stats",
+      "eyebrow": "What We've Achieved",
+      "title": "Our Significant achievements in this industry",
+      "body": "Reconnaissance Technologies expertise in new technology in healthcare ranges from mobile devices, to connected care solutions and remote consultation.",
+      "items": [
+        {
+          "value": "20+",
+          "label": "Projects",
+          "body": "Record of successful healthcare projects delivered globally"
+        },
+        {
+          "value": "14k+",
+          "label": "Patients Data",
+          "body": "Patients information & data processed and securely stored"
+        },
+        {
+          "value": "20k+",
+          "label": "Tele Calls",
+          "body": "Real-time virtual consultations between doctors and patients"
+        },
+        {
+          "value": "30k+",
+          "label": "Appointments",
+          "body": "Scheduling and connecting good doctors and patient virtually and on-site."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "",
+      "title": "Technology Solutions for Healthcare Industry",
+      "body": "Healthcare solutions encompassing business consulting, application development & maintenance, testing, mobility, analytics for improved Patient outcomes & healthcare delivery.",
+      "items": [
+        {
+          "title": "Hospital Management System",
+          "body": "Hospital Management System is robust system that facilitates hospitals to manage and control their day to day activities with patient medical history. Capable of performing multiple functions at a time"
+        },
+        {
+          "title": "Pharmacy Solutions",
+          "body": "Online Pharmacy solution for customers to avail easy medicine delivery. Complete one stop solution for pharmacies looking to target both website and mobile application platforms."
+        },
+        {
+          "title": "Health & Fitness",
+          "body": "Achieve your fitness resolutions with your favorite health and wellness communities. Trainers can either live stream or upload pre-recorded videos to inspire your next fitness journey."
+        },
+        {
+          "title": "Laboratory Tech Solutions",
+          "body": "A platform that enables patients to take hospital based diagnostic tests for ABPM, Sleep study, Holter, and CGM at the comfort of their home"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "our-company/contact-us",
+  "kicker": "Who We Are",
+  "word": "Contact",
+  "title": "Get a Quote",
+  "body": "Committed to serving clients with the best solutions across markets with international ventures",
+  "cta": {
+    "label": "Fill in the form",
+    "href": "#enquiry"
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "eyebrow": "Enquiry",
+      "title": "Please fill in the form and our representative will get back to you.",
+      "body": "",
+      "full": true,
+      "stats": [
+        {
+          "value": "Fast",
+          "label": "Availability",
+          "body": "Available to respond to you in the shortest possible time."
+        },
+        {
+          "value": "6+",
+          "label": "Awards",
+          "body": "Awards that epitomize quality and dedication"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Our Watch Word",
+      "title": "We Commit to Delivering The Best",
+      "body": "We listen and analyze your requirements, and suggest the best approach to a successful execution of your project.",
+      "items": [
+        {
+          "title": "Share Your Requirement",
+          "body": "We keenly analyze your requirements from the beginning for a seamless development process."
+        },
+        {
+          "title": "Non-Disclosure Agreement (NDA)",
+          "body": "To give you the confidence that your business ideas are safe with us, we sign and assure our confidentiality with an NDA"
+        },
+        {
+          "title": "Deep Dive Into Your Requirement",
+          "body": "With you requirement in our possession, our team of experts is allocated for consultation and best approach possible towards the delivery of your project."
+        }
+      ]
+    }
+  ]
+}

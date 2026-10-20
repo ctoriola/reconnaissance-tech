@@ -1,0 +1,52 @@
+{
+  "slug": "our-company/awards",
+  "kicker": "Insights",
+  "word": "Awards",
+  "title": "Awards & Accolades",
+  "body": "Showcasing our prowess through awards and recognitions garnered from around the globe as leading technology & innovation at the global stage.",
+  "cta": {
+    "label": "Speak with an Expert",
+    "href": "/our-company/contact-us"
+  },
+  "sections": [
+    {
+      "type": "cards",
+      "eyebrow": "Celebrate With Us",
+      "title": "Awards & Accolades in recognition of our journey of excellence",
+      "body": "The awards bestowed upon us strengthen our determination to offer high-quality service to the people who matter the most – our clients. Recognized as the top cyber security company in Nigeria for 2023. Recognized as the top custom software company in Nigeria for 2023. Recognized as the top custom software development company in Nigeria for 2022. Recognized as the top web design company in Nigeria for 2022. Recognized as the top cyber security company in Nigeria for 2022.",
+      "items": [
+        {
+          "title": "TechBehemoths Cyber Security Award",
+          "body": "Recognized as the top cyber security company in Nigeria for 2023.",
+          "year": "2023"
+        },
+        {
+          "title": "TechBehemoths Top Custom Software Development Award",
+          "body": "Recognized as the top custom software company in Nigeria for 2023.",
+          "year": "2023"
+        },
+        {
+          "title": "TechBehemoths Top Custom Software Development Award",
+          "body": "Recognized as the top custom software development company in Nigeria for 2022.",
+          "year": "2022"
+        },
+        {
+          "title": "TechBehemoths Web Design Award",
+          "body": "Recognized as the top web design company in Nigeria for 2022.",
+          "year": "2022"
+        },
+        {
+          "title": "TechBehemoths Cyber Security Award",
+          "body": "Recognized as the top cyber security company in Nigeria for 2022.",
+          "year": "2022"
+        }
+      ]
+    },
+    {
+      "type": "badges",
+      "eyebrow": "Recognition",
+      "title": "Badges of excellence",
+      "body": ""
+    }
+  ]
+}
