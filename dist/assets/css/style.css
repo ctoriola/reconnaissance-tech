@@ -605,3 +605,25 @@ a:hover > .circle-btn, .circle-btn:hover { background: var(--ink); color: #fff; 
   .hero::before { background: linear-gradient(180deg, rgba(8, 11, 48, .55) 0%, rgba(8, 11, 48, .6) 55%, rgba(5, 7, 28, .75) 100%); }
 }
 @media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+
+/* ---------- award badge tooltips (home hero) ---------- */
+.hero-badges a { position: relative; }
+.badge-tip {
+  position: absolute; left: 50%; top: calc(100% + 12px); z-index: 5;
+  width: 230px; padding: 14px 16px; border-radius: 16px;
+  background: #fff; color: var(--ink); box-shadow: 0 24px 60px -18px rgba(4, 6, 30, .6);
+  display: grid; gap: 6px; text-align: left;
+  opacity: 0; visibility: hidden; transform: translate(-50%, -4px);
+  transition: opacity .2s, transform .25s var(--ease), visibility .2s; pointer-events: none;
+}
+.badge-tip::before {
+  content: ""; position: absolute; top: -6px; left: 50%; width: 12px; height: 12px;
+  background: #fff; border-radius: 2px; transform: translateX(-50%) rotate(45deg);
+}
+.badge-tip .micro { color: var(--muted); }
+.badge-tip strong { font: 500 16px/1.2 var(--display); letter-spacing: -.02em; }
+.badge-tip-detail { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--accent); }
+.hero-badges a:first-child .badge-tip { left: 0; transform: translate(0, -4px); }
+.hero-badges a:first-child .badge-tip::before { left: 33px; }
+.hero-badges a:hover .badge-tip, .hero-badges a:focus-visible .badge-tip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.hero-badges a:first-child:hover .badge-tip, .hero-badges a:first-child:focus-visible .badge-tip { transform: none; }

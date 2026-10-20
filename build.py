@@ -710,7 +710,10 @@ def industry_rows(c):
 def build_home():
     c = Ctx("")
     h = SITE["home"]
-    badges = "".join(f'<a href="{e(a["href"])}" target="_blank" rel="noopener" title="{e(a["name"])}"><img src="{c.asset("img/" + a["img"])}" alt="{e(a["name"])}" width="54" height="54"></a>' for a in SITE["awards"])
+    badges = "".join(f'''<a href="{e(a["href"])}" target="_blank" rel="noopener" aria-describedby="award-tip-{i}">
+        <img src="{c.asset("img/" + a["img"])}" alt="{e(a["name"])}" width="54" height="54">
+        <span class="badge-tip" role="tooltip" id="award-tip-{i}"><span class="micro">{e(a["issuer"])}</span>
+          <strong>{e(a["award"])}</strong><span class="badge-tip-detail">{e(a["detail"])} {ARROW_OUT}</span></span></a>''' for i, a in enumerate(SITE["awards"]))
     body = hero(c, "Recon", f'{h["eyebrow"]} {h["title"]}', h["body"],
                 {"label": "Get in touch", "href": CONTACT_HREF},
                 extra=f'<div class="hero-badges">{badges}</div>',

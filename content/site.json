@@ -4,7 +4,11 @@
   "url": "https://reconnaissancetechnologies.com",
   "tagline": "Future Ready Software Development Company",
   "contact": {
-    "address": ["Work and Connect Building", "No 50, Ebitu Ukiwe Street", "Jabi, Abuja - 900108, FCT"],
+    "address": [
+      "Work and Connect Building",
+      "No 50, Ebitu Ukiwe Street",
+      "Jabi, Abuja - 900108, FCT"
+    ],
     "country": "Nigeria",
     "phone": "+234 201 330 9246",
     "phone_href": "tel:+2342013309246",
@@ -15,83 +19,300 @@
     "privacy": "dataprotection@reconnaissancetechnologies.com"
   },
   "social": [
-    {"label": "LinkedIn", "href": "https://www.linkedin.com/company/reconnaissance-technologies"},
-    {"label": "X / Twitter", "href": "https://twitter.com/recontech_ng"},
-    {"label": "Instagram", "href": "https://www.instagram.com/recontech_ng"},
-    {"label": "Facebook", "href": "https://www.facebook.com/recontechng"},
-    {"label": "GitHub", "href": "https://github.com/reconnaissance-technologies"},
-    {"label": "Clutch", "href": "https://clutch.co/profile/reconnaissance-technologies"}
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/reconnaissance-technologies"
+    },
+    {
+      "label": "X / Twitter",
+      "href": "https://twitter.com/recontech_ng"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/recontech_ng"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/recontechng"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/reconnaissance-technologies"
+    },
+    {
+      "label": "Clutch",
+      "href": "https://clutch.co/profile/reconnaissance-technologies"
+    }
   ],
   "services": [
-    {"slug": "our-services/product-design", "name": "Product Design", "group": "Offering"},
-    {"slug": "our-services/software-devlopment", "name": "Software Development", "group": "Offering"},
-    {"slug": "our-services/web-appliaction-development", "name": "Web Application Development", "group": "Offering"},
-    {"slug": "our-services/mobile-app-development", "name": "Mobile App Development", "group": "Offering"},
-    {"slug": "our-services/frontend-development", "name": "Frontend Development", "group": "Offering"},
-    {"slug": "our-services/cloud-infrastructure", "name": "Cloud & Infrastructure", "group": "Offering"},
-    {"slug": "our-services/cybersecurity", "name": "Cybersecurity", "group": "Offering"},
-    {"slug": "our-services/ar-vr-development", "name": "AR/VR Development", "group": "Trending"},
-    {"slug": "our-services/ai-ml-development", "name": "AI/ML Development", "group": "Trending"},
-    {"slug": "our-services/iot-development", "name": "IOT Development", "group": "Trending"},
-    {"slug": "our-services/chatbot-development", "name": "Chatbot Development", "group": "Trending"}
+    {
+      "slug": "our-services/product-design",
+      "name": "Product Design",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/software-devlopment",
+      "name": "Software Development",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/web-appliaction-development",
+      "name": "Web Application Development",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/mobile-app-development",
+      "name": "Mobile App Development",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/frontend-development",
+      "name": "Frontend Development",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/cloud-infrastructure",
+      "name": "Cloud & Infrastructure",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/cybersecurity",
+      "name": "Cybersecurity",
+      "group": "Offering"
+    },
+    {
+      "slug": "our-services/ar-vr-development",
+      "name": "AR/VR Development",
+      "group": "Trending"
+    },
+    {
+      "slug": "our-services/ai-ml-development",
+      "name": "AI/ML Development",
+      "group": "Trending"
+    },
+    {
+      "slug": "our-services/iot-development",
+      "name": "IOT Development",
+      "group": "Trending"
+    },
+    {
+      "slug": "our-services/chatbot-development",
+      "name": "Chatbot Development",
+      "group": "Trending"
+    }
   ],
   "industries": [
-    {"slug": "industries/media-and-entertainment", "name": "Media & Entertainment"},
-    {"slug": "industries/education", "name": "Education"},
-    {"slug": "industries/healthcare", "name": "Healthcare"},
-    {"slug": "industries/hi-tech", "name": "Hi-Tech"},
-    {"slug": "industries/logistics", "name": "Logistics"},
-    {"slug": "industries/real-estate-and-construction", "name": "Real Estate & Construction"},
-    {"slug": "industries/retail-and-ecommerce", "name": "Retail & eCommerce"},
-    {"slug": "industries/travel-and-hospitality", "name": "Travel & Hospitality"}
+    {
+      "slug": "industries/media-and-entertainment",
+      "name": "Media & Entertainment"
+    },
+    {
+      "slug": "industries/education",
+      "name": "Education"
+    },
+    {
+      "slug": "industries/healthcare",
+      "name": "Healthcare"
+    },
+    {
+      "slug": "industries/hi-tech",
+      "name": "Hi-Tech"
+    },
+    {
+      "slug": "industries/logistics",
+      "name": "Logistics"
+    },
+    {
+      "slug": "industries/real-estate-and-construction",
+      "name": "Real Estate & Construction"
+    },
+    {
+      "slug": "industries/retail-and-ecommerce",
+      "name": "Retail & eCommerce"
+    },
+    {
+      "slug": "industries/travel-and-hospitality",
+      "name": "Travel & Hospitality"
+    }
   ],
-  "more_industries": ["Manufacturing", "Utilities & On-demand", "FinTech", "Mining & Agriculture"],
+  "more_industries": [
+    "Manufacturing",
+    "Utilities & On-demand",
+    "FinTech",
+    "Mining & Agriculture"
+  ],
   "service_models": [
-    {"slug": "service-model/delivery-model", "name": "Global Delivery Model"},
-    {"slug": "service-model/engagement-model", "name": "Engagement Model"}
+    {
+      "slug": "service-model/delivery-model",
+      "name": "Global Delivery Model"
+    },
+    {
+      "slug": "service-model/engagement-model",
+      "name": "Engagement Model"
+    }
   ],
   "company": [
-    {"slug": "our-company/about-us", "name": "About Us"},
-    {"slug": "our-company/development-methodology", "name": "Development Methodology"},
-    {"slug": "our-company/partnerships", "name": "Partnerships"},
-    {"slug": "our-company/career-overview", "name": "Career Overview"},
-    {"slug": "our-company/contact-us", "name": "Contact Us"}
+    {
+      "slug": "our-company/about-us",
+      "name": "About Us"
+    },
+    {
+      "slug": "our-company/development-methodology",
+      "name": "Development Methodology"
+    },
+    {
+      "slug": "our-company/partnerships",
+      "name": "Partnerships"
+    },
+    {
+      "slug": "our-company/career-overview",
+      "name": "Career Overview"
+    },
+    {
+      "slug": "our-company/contact-us",
+      "name": "Contact Us"
+    }
   ],
   "insights": [
-    {"slug": "our-company/awards", "name": "Awards"},
-    {"slug": "our-company/media-coverage", "name": "Media Coverage"},
-    {"slug": "our-company/csr", "name": "CSR"}
+    {
+      "slug": "our-company/awards",
+      "name": "Awards"
+    },
+    {
+      "slug": "our-company/media-coverage",
+      "name": "Media Coverage"
+    },
+    {
+      "slug": "our-company/csr",
+      "name": "CSR"
+    }
   ],
   "products": [
-    {"name": "Mágico", "href": "https://magico.reconnaissancetechnologies.com", "badge": "New"},
-    {"name": "BuzzForge", "href": "https://buzzforge.reconnaissancetechnologies.com", "badge": "New"},
-    {"name": "Stoqit", "href": "https://stoqit.reconnaissancetechnologies.com", "badge": ""}
+    {
+      "name": "Mágico",
+      "href": "https://magico.reconnaissancetechnologies.com",
+      "badge": "New"
+    },
+    {
+      "name": "BuzzForge",
+      "href": "https://buzzforge.reconnaissancetechnologies.com",
+      "badge": "New"
+    },
+    {
+      "name": "Stoqit",
+      "href": "https://stoqit.reconnaissancetechnologies.com",
+      "badge": ""
+    }
   ],
   "solutions": [
-    {"name": "ERP Software", "industry": "industries/retail-and-ecommerce"},
-    {"name": "Hospital Management", "industry": "industries/healthcare"},
-    {"name": "Multi-vendor eCommerce Solution", "industry": "industries/retail-and-ecommerce"},
-    {"name": "Real Estate Management", "industry": "industries/real-estate-and-construction"},
-    {"name": "Warehouse & Logistics Solution", "industry": "industries/logistics"}
+    {
+      "name": "ERP Software",
+      "industry": "industries/retail-and-ecommerce"
+    },
+    {
+      "name": "Hospital Management",
+      "industry": "industries/healthcare"
+    },
+    {
+      "name": "Multi-vendor eCommerce Solution",
+      "industry": "industries/retail-and-ecommerce"
+    },
+    {
+      "name": "Real Estate Management",
+      "industry": "industries/real-estate-and-construction"
+    },
+    {
+      "name": "Warehouse & Logistics Solution",
+      "industry": "industries/logistics"
+    }
   ],
   "clients": [
-    {"name": "Blue Sea Travels", "logo": "clients/bstl.png", "href": "https://blueseatravels.com"},
-    {"name": "CarvFit", "logo": "clients/carvfit.png", "href": ""},
-    {"name": "H.O.W Tech Limited", "logo": "clients/how-tech-ltd.png", "href": "https://howtech.africa"},
-    {"name": "Ultrashot Nigeria Limited", "logo": "clients/ultrashot.webp", "href": ""},
-    {"name": "Celestina Adams Foundation", "logo": "clients/celestina-adams-foundation.png", "href": "https://cacfoundation.com.ng"},
-    {"name": "Bliss Explorers", "logo": "clients/bliss-explorers.svg", "href": "https://blissexplorers.com"}
+    {
+      "name": "Blue Sea Travels",
+      "logo": "clients/bstl.png",
+      "href": "https://blueseatravels.com"
+    },
+    {
+      "name": "CarvFit",
+      "logo": "clients/carvfit.png",
+      "href": ""
+    },
+    {
+      "name": "H.O.W Tech Limited",
+      "logo": "clients/how-tech-ltd.png",
+      "href": "https://howtech.africa"
+    },
+    {
+      "name": "Ultrashot Nigeria Limited",
+      "logo": "clients/ultrashot.webp",
+      "href": ""
+    },
+    {
+      "name": "Celestina Adams Foundation",
+      "logo": "clients/celestina-adams-foundation.png",
+      "href": "https://cacfoundation.com.ng"
+    },
+    {
+      "name": "Bliss Explorers",
+      "logo": "clients/bliss-explorers.svg",
+      "href": "https://blissexplorers.com"
+    }
   ],
   "testimonials": [
-    {"title": "Brilliant!", "quote": "Working together with them is simple, thanks to Reconnaissance Technologies. They take a professional approach to their work. They are excellent communicators and constantly keep you up to date on any tasks or new developments.", "name": "Joan Ewuruje", "org": "Ultrashot", "place": "Abuja, Nigeria"},
-    {"title": "Exceptional Agency", "quote": "Reconnaissance Technologies stands out for reasons such as their thorough understanding of the requirements and its specific needs. Their skilled developers work tirelessly to ensure that their apps are top-notch in terms of design, functionality, and performance.", "name": "", "org": "H.O.W Tech", "place": ""},
-    {"title": "Superb service delivery", "quote": "Excellent team with superb service delivery and attention to details. Their personalized touch towards project execution made us comfortable.", "name": "Don Williams", "org": "BlissTribe Movement", "place": "Scotland, UK"},
-    {"title": "Commendable approach", "quote": "Easy to deal with, swift to revert and their approach to our ecommerce website and CRM development is commendable.", "name": "Deborah Ayigbi", "org": "", "place": "Lagos, Nigeria"}
+    {
+      "title": "Brilliant!",
+      "quote": "Working together with them is simple, thanks to Reconnaissance Technologies. They take a professional approach to their work. They are excellent communicators and constantly keep you up to date on any tasks or new developments.",
+      "name": "Joan Ewuruje",
+      "org": "Ultrashot",
+      "place": "Abuja, Nigeria"
+    },
+    {
+      "title": "Exceptional Agency",
+      "quote": "Reconnaissance Technologies stands out for reasons such as their thorough understanding of the requirements and its specific needs. Their skilled developers work tirelessly to ensure that their apps are top-notch in terms of design, functionality, and performance.",
+      "name": "",
+      "org": "H.O.W Tech",
+      "place": ""
+    },
+    {
+      "title": "Superb service delivery",
+      "quote": "Excellent team with superb service delivery and attention to details. Their personalized touch towards project execution made us comfortable.",
+      "name": "Don Williams",
+      "org": "BlissTribe Movement",
+      "place": "Scotland, UK"
+    },
+    {
+      "title": "Commendable approach",
+      "quote": "Easy to deal with, swift to revert and their approach to our ecommerce website and CRM development is commendable.",
+      "name": "Deborah Ayigbi",
+      "org": "",
+      "place": "Lagos, Nigeria"
+    }
   ],
   "awards": [
-    {"name": "Clutch.co 2023 Top Health & Wellness App Developer, Nigeria", "img": "awards/clutch-2023.png", "href": "https://clutch.co/profile/reconnaissance-technologies"},
-    {"name": "TechBehemoths Top Cyber Security Company in Nigeria 2023", "img": "awards/techbehemoths-cybersecurity-2023.png", "href": "https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717"},
-    {"name": "TechBehemoths Top Custom Software Development Company in Nigeria 2023", "img": "awards/techbehemoths-software-2023.png", "href": "https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717"}
+    {
+      "name": "Clutch.co 2023 Top Health & Wellness App Developer, Nigeria",
+      "img": "awards/clutch-2023.png",
+      "href": "https://clutch.co/profile/reconnaissance-technologies",
+      "issuer": "Clutch.co",
+      "award": "Top Health & Wellness App Developer",
+      "detail": "Nigeria · 2023"
+    },
+    {
+      "name": "TechBehemoths Top Cyber Security Company in Nigeria 2023",
+      "img": "awards/techbehemoths-cybersecurity-2023.png",
+      "href": "https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717",
+      "issuer": "TechBehemoths Awards",
+      "award": "Top Cyber Security Company",
+      "detail": "Nigeria · 2023"
+    },
+    {
+      "name": "TechBehemoths Top Custom Software Development Company in Nigeria 2023",
+      "img": "awards/techbehemoths-software-2023.png",
+      "href": "https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717",
+      "issuer": "TechBehemoths Awards",
+      "award": "Top Custom Software Development Company",
+      "detail": "Nigeria · 2023"
+    }
   ],
   "home": {
     "eyebrow": "Future Ready",
@@ -105,10 +326,26 @@
       "Our commitment lies in empowering businesses to excel in the ever-evolving market landscape. We achieve this by delivering impactful software development and enterprise technology solutions that yield tangible and measurable outcomes."
     ],
     "stats": [
-      {"value": "3+", "label": "Years", "body": "Wealth of expertise in providing IT solutions and services."},
-      {"value": "10+", "label": "Experts", "body": "Dedicated team of committed, skilled and proficient professionals."},
-      {"value": "5+", "label": "Awards", "body": "Recognition through prestigious industry awards for excellence."},
-      {"value": "12+", "label": "Clients", "body": "Global clients affirming our quality and processes through testimonials."}
+      {
+        "value": "3+",
+        "label": "Years",
+        "body": "Wealth of expertise in providing IT solutions and services."
+      },
+      {
+        "value": "10+",
+        "label": "Experts",
+        "body": "Dedicated team of committed, skilled and proficient professionals."
+      },
+      {
+        "value": "5+",
+        "label": "Awards",
+        "body": "Recognition through prestigious industry awards for excellence."
+      },
+      {
+        "value": "12+",
+        "label": "Clients",
+        "body": "Global clients affirming our quality and processes through testimonials."
+      }
     ],
     "services_eyebrow": "Our Services",
     "services_title": "Drive technological innovation through software development services",
@@ -122,24 +359,135 @@
     "insights_eyebrow": "Insights & News",
     "insights_title": "Explore insights into the IT industry and stay updated on the latest technology trends",
     "insights": [
-      {"title": "Our Work", "body": "Explore our diverse portfolio showcasing our unwavering dedication to quality and excellence. Our solutions go beyond borders, catering to global clients across various industries. Experience the pinnacle of excellence through our portfolio.", "href": "/our-work/portfolio"},
-      {"title": "Explore Our Solutions", "body": "Dive into our suite of solutions and discover how our expertise has helped elevate businesses, streamline processes, and drive unprecedented growth in today's dynamic digital landscape.", "href": "/our-solutions"},
-      {"title": "Explore Opportunities", "body": "Step into our community today and begin your journey toward substantial growth! Explore the myriad of possibilities that await, achieve your goals, and tap into your boundless potential", "href": "/our-company/career-overview"},
-      {"title": "CSR", "body": "Our commitment to corporate social responsibility is exemplified through our partnership with The Iwoni Foundation to create lasting change, empower lives, and pave the way for a brighter future.", "href": "/our-company/csr"}
+      {
+        "title": "Our Work",
+        "body": "Explore our diverse portfolio showcasing our unwavering dedication to quality and excellence. Our solutions go beyond borders, catering to global clients across various industries. Experience the pinnacle of excellence through our portfolio.",
+        "href": "/our-work/portfolio"
+      },
+      {
+        "title": "Explore Our Solutions",
+        "body": "Dive into our suite of solutions and discover how our expertise has helped elevate businesses, streamline processes, and drive unprecedented growth in today's dynamic digital landscape.",
+        "href": "/our-solutions"
+      },
+      {
+        "title": "Explore Opportunities",
+        "body": "Step into our community today and begin your journey toward substantial growth! Explore the myriad of possibilities that await, achieve your goals, and tap into your boundless potential",
+        "href": "/our-company/career-overview"
+      },
+      {
+        "title": "CSR",
+        "body": "Our commitment to corporate social responsibility is exemplified through our partnership with The Iwoni Foundation to create lasting change, empower lives, and pave the way for a brighter future.",
+        "href": "/our-company/csr"
+      }
     ],
     "clients_eyebrow": "Our Clients & What They Say",
     "clients_title": "Trusted by Businesses Worldwide"
   },
   "stack": {
-    "AI / ML": ["Chatbot", "ChatGPT", "Computer Vision", "CNN", "Deep Learning", "Generative AI", "Linear Regression", "Logistic Regression", "NLP"],
-    "Backend": [".NET", ".NET Core", "Java", "Node.js", "PHP", "Python", "Ruby"],
-    "Cloud / DevOps": ["AWS", "Azure", "Docker", "Google Cloud", "Jenkins", "Kubernetes", "Maven", "OpenShift", "Oracle Cloud"],
-    "CMS / E-Commerce": ["Drupal", "Magento", "Shopify", "Sitecore", "Strapi", "WooCommerce", "WordPress"],
-    "Database": ["DynamoDB", "IBM DB2", "MariaDB", "MongoDB", "MySQL", "Oracle DB", "PostgreSQL", "SQLite", "Sybase"],
-    "Frameworks": ["CodeIgniter", "Django", ".NET Core", ".NET MVC", "Express.js", "Flask", "Hibernate", "Laravel", "Spring Boot", "Spring Cloud"],
-    "Frontend": ["Angular", "Backbone.js", "Bootstrap", "CSS3", "D3.js", "HTML5", "JavaScript", "jQuery", "KnockoutJS", "Next.js", "Nuxt.js", "React", "Tailwind CSS", "TypeScript", "Vue.js"],
-    "Hi-Tech": ["AR / VR", "Blockchain", "Elasticsearch", "Event-driven Architecture", "Kafka", "Metaverse", "Microfrontend Architecture", "PWA", "RabbitMQ", "Serverless Architecture"],
-    "Mobile": ["Flutter", "Kotlin", "React Native", "Swift", "Unity 3D"],
-    "Quality Assurance": ["CircleCI", "Gradle", "Maven", "Selenium"]
+    "AI / ML": [
+      "Chatbot",
+      "ChatGPT",
+      "Computer Vision",
+      "CNN",
+      "Deep Learning",
+      "Generative AI",
+      "Linear Regression",
+      "Logistic Regression",
+      "NLP"
+    ],
+    "Backend": [
+      ".NET",
+      ".NET Core",
+      "Java",
+      "Node.js",
+      "PHP",
+      "Python",
+      "Ruby"
+    ],
+    "Cloud / DevOps": [
+      "AWS",
+      "Azure",
+      "Docker",
+      "Google Cloud",
+      "Jenkins",
+      "Kubernetes",
+      "Maven",
+      "OpenShift",
+      "Oracle Cloud"
+    ],
+    "CMS / E-Commerce": [
+      "Drupal",
+      "Magento",
+      "Shopify",
+      "Sitecore",
+      "Strapi",
+      "WooCommerce",
+      "WordPress"
+    ],
+    "Database": [
+      "DynamoDB",
+      "IBM DB2",
+      "MariaDB",
+      "MongoDB",
+      "MySQL",
+      "Oracle DB",
+      "PostgreSQL",
+      "SQLite",
+      "Sybase"
+    ],
+    "Frameworks": [
+      "CodeIgniter",
+      "Django",
+      ".NET Core",
+      ".NET MVC",
+      "Express.js",
+      "Flask",
+      "Hibernate",
+      "Laravel",
+      "Spring Boot",
+      "Spring Cloud"
+    ],
+    "Frontend": [
+      "Angular",
+      "Backbone.js",
+      "Bootstrap",
+      "CSS3",
+      "D3.js",
+      "HTML5",
+      "JavaScript",
+      "jQuery",
+      "KnockoutJS",
+      "Next.js",
+      "Nuxt.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "Hi-Tech": [
+      "AR / VR",
+      "Blockchain",
+      "Elasticsearch",
+      "Event-driven Architecture",
+      "Kafka",
+      "Metaverse",
+      "Microfrontend Architecture",
+      "PWA",
+      "RabbitMQ",
+      "Serverless Architecture"
+    ],
+    "Mobile": [
+      "Flutter",
+      "Kotlin",
+      "React Native",
+      "Swift",
+      "Unity 3D"
+    ],
+    "Quality Assurance": [
+      "CircleCI",
+      "Gradle",
+      "Maven",
+      "Selenium"
+    ]
   }
 }
