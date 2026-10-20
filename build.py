@@ -111,85 +111,132 @@ def page_hero_body(slug):
 
 
 # ---------------------------------------------------------------- chrome
+def short(text, n=84):
+    """First sentence of a page intro, trimmed for one-line menu descriptions."""
+    text = re.split(r"(?<=[.!?])\s", (text or "").strip())[0]
+    if len(text) <= n:
+        return text.rstrip(".")
+    return text[:n].rsplit(" ", 1)[0].rstrip(",;:&") + "…"
+
+
+def mega_link(c, name, href, desc="", external=False, badge=""):
+    target = ' target="_blank" rel="noopener"' if external else ""
+    tag = f'<span class="badge">{e(badge)}</span>' if badge else (ARROW_OUT if external else "")
+    return (f'<li><a class="mega-link" href="{c.url(href)}"{target}>'
+            f'<span class="mega-link-name">{e(name)}{tag}</span>'
+            f'{f"<span class=mega-link-desc>{e(desc)}</span>" if desc else ""}</a></li>')
+
+
+def page_links(c, items):
+    return [mega_link(c, i["name"], i["slug"], short(PAGES.get(i["slug"], {}).get("body", ""))) for i in items]
+
+
+def mega(c, key, tabs, feature):
+    """Hidden-Brains-style mega panel: category tabs on the left, the hovered
+    category's links (with one-line descriptions) in the middle, a feature card right."""
+    tab_html, panels = [], []
+    for i, (label, blurb, links) in enumerate(tabs):
+        tid = f"{key}-{i}"
+        tab_html.append(
+            f'<button class="mega-tab" type="button" role="tab" id="mt-{tid}" aria-controls="mp-{tid}" '
+            f'aria-selected="{"true" if i == 0 else "false"}" tabindex="{0 if i == 0 else -1}">'
+            f'<span class="mega-tab-label">{e(label)}<span class="mega-count">{len(links):02d}</span></span>'
+            f'<span class="mega-tab-blurb">{e(blurb)}</span></button>')
+        panels.append(f'<ul class="mega-grid" role="tabpanel" id="mp-{tid}" aria-labelledby="mt-{tid}"{"" if i == 0 else " hidden"}>{"".join(links)}</ul>')
+    return f'''<div class="mega" id="menu-{key}">
+      <div class="mega-tabs" role="tablist" aria-orientation="vertical" data-mega-tabs>{"".join(tab_html)}</div>
+      <div class="mega-panels">{"".join(panels)}</div>
+      <aside class="mega-feature">{feature}</aside>
+    </div>'''
+
+
+def feature_card(c, eyebrow, title, body, label, href):
+    return (f'<span class="eyebrow">{e(eyebrow)}</span><h3 class="h-s">{two_tone(title)}</h3>'
+            f'<p>{e(body)}</p><a class="pill pill--ink" href="{c.url(href)}">{e(label)} {ARROW_R}</a>')
+
+
 def nav_menus(c):
     by_group = {}
     for s in SITE["services"]:
         by_group.setdefault(s["group"], []).append(s)
-
-    def links(items):
-        return "".join(f'<li><a href="{c.url(i["slug"])}">{e(i["name"])}</a></li>' for i in items)
-
-    services = f'''
-      <div><h4>Offering</h4><ul>{links(by_group["Offering"])}</ul></div>
-      <div><h4>Trending Services</h4><ul>{links(by_group["Trending"])}</ul>
-        <h4 style="margin-top:20px">Service Models</h4><ul>{links(SITE["service_models"])}</ul></div>
-      <div><h4>Industries We Serve</h4><ul>{links(SITE["industries"])}</ul></div>'''
-    products = "".join(
-        f'<li><a href="{e(p["href"])}" target="_blank" rel="noopener">{e(p["name"])}'
-        f'{f"<span class=badge>{e(p["badge"])}</span>" if p["badge"] else ARROW_OUT}</a></li>'
-        for p in SITE["products"])
-    sols = "".join(f'<li><a href="{c.url(s["industry"])}">{e(s["name"])}</a></li>' for s in SITE["solutions"])
-    solutions = f'''
-      <div><h4>Product Offerings</h4><ul>{products}</ul></div>
-      <div><h4>Solutions</h4><ul>{sols}</ul></div>
-      <div class="menu-feature"><p>Discover how our expertise has helped elevate businesses and streamline processes.</p>
-        <a class="link-underline" href="{c.url("our-solutions")}">Products &amp; Solutions Overview</a></div>'''
-    company = f'''
-      <div><h4>Who We Are</h4><ul>{links(SITE["company"])}</ul></div>
-      <div><h4>Insights</h4><ul>{links(SITE["insights"])}
-        <li><a href="{c.url("our-work/portfolio")}">Our Work</a></li></ul></div>
-      <div class="menu-feature"><h4 style="margin:0">Talk to an Expert</h4>
-        <p>One of our experts would love to respond to your queries.</p>
-        <a class="pill pill--ink" href="{c.url(CONTACT_HREF)}">Speak to an Expert</a></div>'''
-    return services, solutions, company
+    expert = feature_card(c, "Talk to an Expert", "One of our experts would love to respond to your queries",
+                          "Share your requirement and we will suggest the best approach for your project.",
+                          "Speak to an Expert", CONTACT_HREF)
+    services = mega(c, "services", [
+        ("Offering", "Core engineering services", page_links(c, by_group["Offering"])),
+        ("Trending Services", "AI, immersive and connected tech", page_links(c, by_group["Trending"])),
+        ("Service Models", "How we deliver and engage", page_links(c, SITE["service_models"])),
+    ], expert)
+    more = [mega_link(c, n, CONTACT_HREF, "Talk to our specialists about this industry") for n in SITE["more_industries"]]
+    industries = mega(c, "industries", [
+        ("Industries We Serve", "Domain-specific software solutions", page_links(c, SITE["industries"])),
+        ("More Industries", "Custom builds for other sectors", more),
+    ], feature_card(c, "Industries We Serve", "Specialized software solutions tailored to specific industries",
+                    "Our specialists work closely with clients, comprehending their challenges and goals.",
+                    "All industries", "our-services#industries"))
+    products = [mega_link(c, p["name"], p["href"], "Reconnaissance Technologies product", external=True, badge=p["badge"]) for p in SITE["products"]]
+    sols = [mega_link(c, s["name"], s["industry"], short(PAGES[s["industry"]]["body"])) for s in SITE["solutions"]]
+    solutions = mega(c, "solutions", [
+        ("Solutions", "Industry-ready platforms", sols),
+        ("Product Offerings", "Products built in-house", products),
+    ], feature_card(c, "Explore Our Solutions", "Products & Solutions Overview",
+                    "Discover how our expertise has helped elevate businesses and streamline processes.",
+                    "View overview", "our-solutions"))
+    insights = page_links(c, SITE["insights"]) + [mega_link(c, "Our Work", "our-work/portfolio", short(SITE["home"]["insights"][0]["body"]))]
+    for i, it in enumerate(SITE["insights"]):
+        if it["slug"] == "our-company/csr":
+            insights[i] = mega_link(c, it["name"], it["slug"], short(SITE["home"]["insights"][3]["body"]))
+    company = mega(c, "company", [
+        ("Who We Are", "Our company, people and process", page_links(c, SITE["company"])),
+        ("Insights", "Recognition, work and impact", insights),
+    ], expert)
+    return services, industries, solutions, company
 
 
 def header(c, current):
-    services, solutions, company = nav_menus(c)
+    services, industries, solutions, company = nav_menus(c)
 
     def item(key, label, menu):
-        return f'''<div class="nav-item">
-          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-{key}"
-            {'aria-current="page"' if current == key else ''}>{label}{CHEVRON}</button>
-          <div class="menu" id="menu-{key}">{menu}</div></div>'''
+        cur = ' aria-current="page"' if current == key else ""
+        return f'''<li class="nav-item" data-menu>
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-{key}"{cur}>{label}{CHEVRON}</button>
+          {menu}</li>'''
 
     def drawer_group(title, items):
         lis = "".join(f'<li><a href="{c.url(i["slug"]) if "slug" in i else e(i["href"])}">{e(i["name"])}</a></li>' for i in items)
         return f"<details><summary>{e(title)}</summary><ul>{lis}</ul></details>"
 
     drawer = "".join([
-        drawer_group("Services", SITE["services"]),
+        drawer_group("Services", SITE["services"] + SITE["service_models"]),
         drawer_group("Industries", SITE["industries"]),
         drawer_group("Solutions", SITE["products"] + [{"slug": "our-solutions", "name": "Products & Solutions Overview"}]),
-        drawer_group("Who We Are", SITE["company"] + SITE["service_models"]),
+        drawer_group("Who We Are", SITE["company"]),
         drawer_group("Insights", SITE["insights"] + [{"slug": "our-work/portfolio", "name": "Our Work"}]),
     ])
+    work_cur = ' aria-current="page"' if current == "work" else ""
     return f'''
-<header class="site-header">
-  <div class="frame"><div class="bar">
+<header class="site-header" data-header>
+  <div class="bar">
     <a class="brand" href="{c.url("/")}" aria-label="Reconnaissance Technologies home">
       <img src="{c.asset("img/logo-white.svg")}" alt="Reconnaissance Technologies" width="128" height="30">
       <span class="brand-meta micro"><span>Est. 2020</span><span>Abuja, NG</span></span>
     </a>
     <nav class="nav" aria-label="Main">
-      <div class="nav-col">{item("services", "Services", services)}{item("solutions", "Solutions", solutions)}</div>
-      <div class="nav-col">{item("company", "Who We Are", company)}
-        <a class="nav-link" href="{c.url("our-work/portfolio")}" {'aria-current="page"' if current == "work" else ''}>Our Work</a></div>
+      <ul class="nav-list">
+        {item("services", "Services", services)}
+        {item("industries", "Industries", industries)}
+        {item("solutions", "Solutions", solutions)}
+        <li class="nav-item"><a class="nav-link" href="{c.url("our-work/portfolio")}"{work_cur}>Our Work</a></li>
+        {item("company", "Who We Are", company)}
+      </ul>
     </nav>
-    <a class="pill pill--white header-cta" href="{c.url(CONTACT_HREF)}">Get in Touch</a>
+    <div class="header-cta">
+      <a class="circle-btn circle-btn--light" href="{c.url(CONTACT_HREF)}" aria-hidden="true" tabindex="-1">{ARROW_OUT}</a>
+      <a class="pill pill--white" href="{c.url(CONTACT_HREF)}">Get in Touch</a>
+    </div>
     <button class="burger" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span></span><span></span></button>
-  </div></div>
+  </div>
 </header>
-<div class="sticky-bar" aria-hidden="true">
-  <a href="{c.url("/")}" tabindex="-1"><img src="{c.asset("img/logo-white.svg")}" alt="" width="94" height="22"></a>
-  <nav>
-    <a class="nav-link" tabindex="-1" href="{c.url("our-services")}">Services</a>
-    <a class="nav-link" tabindex="-1" href="{c.url("our-solutions")}">Solutions</a>
-    <a class="nav-link" tabindex="-1" href="{c.url("our-company/about-us")}">Who We Are</a>
-    <a class="nav-link" tabindex="-1" href="{c.url("our-work/portfolio")}">Our Work</a>
-  </nav>
-  <a class="pill pill--white" tabindex="-1" href="{c.url(CONTACT_HREF)}">Get in Touch</a>
-</div>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
   <div class="drawer-top">
     <img src="{c.asset("img/logo-white.svg")}" alt="Reconnaissance Technologies" width="110" height="26">
@@ -672,7 +719,9 @@ def crumbs_for(page):
 
 
 def current_for(slug):
-    if slug.startswith(("our-services", "industries", "service-model")):
+    if slug.startswith("industries"):
+        return "industries"
+    if slug.startswith(("our-services", "service-model")):
         return "services"
     if slug.startswith("our-company"):
         return "company"

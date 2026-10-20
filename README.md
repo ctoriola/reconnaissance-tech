@@ -21,7 +21,7 @@ python3 build.py --serve   # builds, then serves dist/ at http://localhost:8000
 | `content/pages/*.json` | One file per page (`our-services--cybersecurity.json` → `/our-services/cybersecurity/`). A hero (`word`, `title`, `body`, `cta`) plus a list of `sections` |
 | `build.py` | The generator: page chrome, section renderers and the custom pages (home, services index, our work, solutions, CSR, 404) |
 | `assets/css/style.css` | The design system (tokens at the top) |
-| `assets/js/main.js` | Menus, mobile drawer, sticky bar, card rail, tabs, accordions, scroll reveal, enquiry form |
+| `assets/js/main.js` | Mega menus (hover/click, vertical category tabs), header scroll state, mobile drawer, card rail, tabs, accordions, scroll reveal, enquiry form |
 | `assets/video/` | Hero background loop (`hero.webm`, `hero.mp4` fallback, `hero-poster.jpg`). Re-encoded from the brand video: the 0.4–15.8s light-streak section, 1280px wide, no audio |
 | `assets/img/` | Logo (vector, plus a white variant for dark backgrounds), favicon, client logos, award badges |
 

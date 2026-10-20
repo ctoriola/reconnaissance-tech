@@ -2,31 +2,63 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
-  // ---------- desktop mega menus
-  const menuButtons = $$('.nav-item > .nav-link');
-  const closeMenus = (except) => menuButtons.forEach((b) => {
-    if (b === except) return;
-    b.setAttribute('aria-expanded', 'false');
-    b.nextElementSibling.classList.remove('is-open');
-  });
-  menuButtons.forEach((btn) => {
-    const menu = btn.nextElementSibling;
+  // ---------- desktop mega menus: open on hover (with intent delay) or click
+  const header = $('[data-header]');
+  const items = $$('[data-menu]');
+  const setOpen = (item, open) => {
+    const btn = $('.nav-link', item);
+    btn.setAttribute('aria-expanded', String(open));
+    $('.mega', item).classList.toggle('is-open', open);
+  };
+  const closeMenus = (except) => items.forEach((it) => { if (it !== except) setOpen(it, false); });
+  const syncHeader = () => header && header.classList.toggle('has-open', items.some((it) => $('.mega', it).classList.contains('is-open')));
+  const canHover = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  items.forEach((item) => {
+    const btn = $('.nav-link', item);
+    let timer;
     btn.addEventListener('click', (ev) => {
       ev.stopPropagation();
       const open = btn.getAttribute('aria-expanded') !== 'true';
-      closeMenus(btn);
-      btn.setAttribute('aria-expanded', String(open));
-      menu.classList.toggle('is-open', open);
+      closeMenus(item); setOpen(item, open); syncHeader();
+    });
+    if (canHover) {
+      item.addEventListener('mouseenter', () => { clearTimeout(timer); timer = setTimeout(() => { closeMenus(item); setOpen(item, true); syncHeader(); }, 90); });
+      item.addEventListener('mouseleave', () => { clearTimeout(timer); timer = setTimeout(() => { setOpen(item, false); syncHeader(); }, 180); });
+    }
+    // vertical category tabs inside the panel: hover, focus or arrow keys switch the link grid
+    const tabs = $$('.mega-tab', item);
+    const select = (tab) => tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('mouseenter', () => select(tab));
+      tab.addEventListener('click', () => select(tab));
+      tab.addEventListener('keydown', (ev) => {
+        const step = { ArrowDown: 1, ArrowUp: -1 }[ev.key];
+        if (!step) return;
+        ev.preventDefault();
+        const next = tabs[(i + step + tabs.length) % tabs.length];
+        select(next); next.focus();
+      });
     });
   });
-  document.addEventListener('click', (ev) => { if (!ev.target.closest('.nav-item')) closeMenus(); });
+  document.addEventListener('click', (ev) => { if (!ev.target.closest('[data-menu]')) { closeMenus(); syncHeader(); } });
   document.addEventListener('keydown', (ev) => {
     if (ev.key !== 'Escape') return;
-    const openBtn = menuButtons.find((b) => b.getAttribute('aria-expanded') === 'true');
-    closeMenus();
-    if (openBtn) openBtn.focus();
+    const open = items.find((it) => $('.nav-link', it).getAttribute('aria-expanded') === 'true');
+    closeMenus(); syncHeader();
+    if (open) $('.nav-link', open).focus();
     closeDrawer();
   });
+
+  // ---------- header gains a glass background once the page scrolls
+  if (header) {
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 
   // ---------- mobile drawer
   const drawer = $('#drawer');
@@ -47,18 +79,6 @@
   if (burger && drawer) {
     burger.addEventListener('click', openDrawer);
     $('[data-close]', drawer).addEventListener('click', closeDrawer);
-  }
-
-  // ---------- compact bar once the hero has scrolled away
-  const bar = $('.sticky-bar');
-  const heroEl = $('.hero');
-  if (bar && heroEl && 'IntersectionObserver' in window) {
-    new IntersectionObserver(([entry]) => {
-      const show = !entry.isIntersecting;
-      bar.classList.toggle('is-visible', show);
-      bar.setAttribute('aria-hidden', String(!show));
-      $$('a', bar).forEach((a) => (show ? a.removeAttribute('tabindex') : a.setAttribute('tabindex', '-1')));
-    }, { threshold: 0.12 }).observe(heroEl);
   }
 
   // ---------- card rail: the hovered / focused card expands
