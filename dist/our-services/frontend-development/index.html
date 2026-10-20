@@ -32,14 +32,14 @@
     <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
     <feMerge><feMergeNode in="far"/><feMergeNode in="mid"/><feMergeNode in="near"/></feMerge>
   </filter>
-  <filter id="motion-sm" x="-20%" y="-40%" width="280%" height="180%" color-interpolation-filters="sRGB">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="2 1.2" result="near"/>
-    <feGaussianBlur in="SourceGraphic" stdDeviation="6.4 2.4" result="mid0"/>
-    <feOffset in="mid0" dx="7.2" result="mid1"/>
-    <feComponentTransfer in="mid1" result="mid"><feFuncA type="linear" slope=".75"/></feComponentTransfer>
-    <feGaussianBlur in="SourceGraphic" stdDeviation="13.6 4" result="far0"/>
-    <feOffset in="far0" dx="19.2" result="far1"/>
-    <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
+  <filter id="motion-sm" x="-20%" y="-60%" width="300%" height="220%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3 2.5" result="near"/>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="9 5" result="mid0"/>
+    <feOffset in="mid0" dx="8" result="mid1"/>
+    <feComponentTransfer in="mid1" result="mid"><feFuncA type="linear" slope=".7"/></feComponentTransfer>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="18 7" result="far0"/>
+    <feOffset in="far0" dx="20" result="far1"/>
+    <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".4"/></feComponentTransfer>
     <feMerge><feMergeNode in="far"/><feMergeNode in="mid"/><feMergeNode in="near"/></feMerge>
   </filter>
 </svg>

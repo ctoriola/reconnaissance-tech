@@ -276,14 +276,14 @@ def document(c, title, description, body, current=""):
     <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
     <feMerge><feMergeNode in="far"/><feMergeNode in="mid"/><feMergeNode in="near"/></feMerge>
   </filter>
-  <filter id="motion-sm" x="-20%" y="-40%" width="280%" height="180%" color-interpolation-filters="sRGB">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="2 1.2" result="near"/>
-    <feGaussianBlur in="SourceGraphic" stdDeviation="6.4 2.4" result="mid0"/>
-    <feOffset in="mid0" dx="7.2" result="mid1"/>
-    <feComponentTransfer in="mid1" result="mid"><feFuncA type="linear" slope=".75"/></feComponentTransfer>
-    <feGaussianBlur in="SourceGraphic" stdDeviation="13.6 4" result="far0"/>
-    <feOffset in="far0" dx="19.2" result="far1"/>
-    <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
+  <filter id="motion-sm" x="-20%" y="-60%" width="300%" height="220%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3 2.5" result="near"/>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="9 5" result="mid0"/>
+    <feOffset in="mid0" dx="8" result="mid1"/>
+    <feComponentTransfer in="mid1" result="mid"><feFuncA type="linear" slope=".7"/></feComponentTransfer>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="18 7" result="far0"/>
+    <feOffset in="far0" dx="20" result="far1"/>
+    <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".4"/></feComponentTransfer>
     <feMerge><feMergeNode in="far"/><feMergeNode in="mid"/><feMergeNode in="near"/></feMerge>
   </filter>
 </svg>
@@ -714,10 +714,13 @@ def build_home():
                 tag=["Smart software systems", "& intelligent solutions", "Abuja · Worldwide"],
                 word_html='<p class="wordmark wordmark--full" aria-hidden="true">Reconnaissan<span class="trail">ce</span></p>')
 
-    # 1. About + stats (white panel rising over the hero)
+    # 1. Client logos (white panel rising over the hero)
+    body += clients_block(c, "Our Clients", "Trusted by Customers Worldwide", quotes_on=False, first=True)
+
+    # 2. About + stats
     about = "".join(f"<p>{e(p)}</p>" for p in h["about_body"])
     body += f'''
-<section class="rise"><div class="frame"><div class="panel reveal">
+<section class="section--tight"><div class="frame"><div class="panel reveal">
   <div class="stats-wrap">
     <div class="stats-top">
       <div style="display:grid;gap:22px;align-content:start"><span class="eyebrow">{e(h["about_eyebrow"])}</span>
@@ -758,7 +761,7 @@ def build_home():
 </div></div></section>'''
 
     # 6. Clients & testimonials
-    body += clients_block(c, h["clients_eyebrow"], h["clients_title"])
+    body += clients_block(c, "Testimonials", h["clients_eyebrow"], logos_on=False)
 
     # 7. CTA + contact
     body += sec_cta(c, {"title": "Ready to start your dream project?", "body": "Experience the power of our Team's prowess and engage in Next-Level Business Success!",
@@ -767,7 +770,7 @@ def build_home():
     return document(c, f'{SITE["name"]} — {SITE["tagline"]}', h["body"] + ". " + h["about_body"][0], body)
 
 
-def clients_block(c, eyebrow, title):
+def clients_block(c, eyebrow, title, logos_on=True, quotes_on=True, first=False):
     logos = "".join(
         (f'<a href="{e(cl["href"])}" target="_blank" rel="noopener" title="{e(cl["name"])}">' if cl["href"] else f'<div title="{e(cl["name"])}">')
         + f'<img src="{c.asset("img/" + cl["logo"])}" alt="{e(cl["name"])} logo" loading="lazy">'
@@ -777,10 +780,10 @@ def clients_block(c, eyebrow, title):
         <footer><span>{f"<strong>{e(t['name'])}</strong>" if t["name"] else ""}{e(", ".join(x for x in [t["org"], t["place"]] if x))}</span></footer>
       </figure>''' for t in SITE["testimonials"])
     return f'''
-<section class="section--tight"><div class="frame"><div class="panel reveal">
+<section class="{'rise' if first else 'section--tight'}"><div class="frame"><div class="panel reveal">
   {head_block({"eyebrow": eyebrow, "title": title})}
-  <div class="logos">{logos}</div>
-  <div class="quotes">{quotes}</div>
+  {f'<div class="logos">{logos}</div>' if logos_on else ""}
+  {f'<div class="quotes">{quotes}</div>' if quotes_on else ""}
 </div></div></section>'''
 
 
