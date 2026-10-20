@@ -240,6 +240,18 @@ a:hover > .circle-btn, .circle-btn:hover { background: var(--ink); color: #fff; 
           mask-image: linear-gradient(90deg, #000 20%, rgba(0, 0, 0, .55) 75%, rgba(0, 0, 0, .25));
 }
 .wordmark.is-long { font-size: clamp(80px, 15vw, 250px); }
+/* home hero: the full name, styled exactly like the footer wordmark */
+.wordmark--full {
+  left: 0; right: 0; text-align: center;
+  font-size: clamp(44px, 10.6vw, 170px); line-height: .8;
+  -webkit-mask-image: linear-gradient(180deg, #000 10%, rgba(0, 0, 0, .15) 85%);
+          mask-image: linear-gradient(180deg, #000 10%, rgba(0, 0, 0, .15) 85%);
+}
+.wordmark--full .trail {
+  filter: blur(clamp(2px, .4vw, 5px));
+  text-shadow: .06em 0 .03em rgba(255, 255, 255, .35), .14em 0 .07em rgba(170, 182, 255, .2), .24em 0 .12em rgba(170, 182, 255, .1);
+  -webkit-mask-image: none; mask-image: none;
+}
 .hero-badges { position: absolute; left: calc(var(--pad) * .75); top: clamp(150px, 14vw, 190px); display: flex; gap: 10px; z-index: 2; }
 .hero-badges a { width: 66px; height: 66px; padding: 6px; border-radius: 16px; background: rgba(255, 255, 255, .06); border: 1px solid var(--line-dark); transition: background .2s, transform .3s var(--ease); }
 .hero-badges a:hover { background: rgba(255, 255, 255, .14); transform: translateY(-2px); }
@@ -554,3 +566,4 @@ a:hover > .circle-btn, .circle-btn:hover { background: var(--ink); color: #fff; 
 .about-copy p { font-size: 14px; color: var(--muted); }
 .stats-foot .stats { margin-left: auto; }
 @media (max-width: 1100px) { .stats-foot { flex-direction: column; align-items: stretch !important; } }
+.hero:has(.wordmark--full) .hero-tag { bottom: calc(clamp(70px, 6vw, 96px) + clamp(44px, 10.6vw, 170px) * .95); }

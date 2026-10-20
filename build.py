@@ -276,7 +276,7 @@ def document(c, title, description, body, current=""):
 
 
 # ---------------------------------------------------------------- blocks
-def hero(c, word, title, body="", cta=None, kicker="", crumbs=None, extra="", tag=None, title_html=None):
+def hero(c, word, title, body="", cta=None, kicker="", crumbs=None, extra="", tag=None, title_html=None, word_html=None):
     crumbs_html = ""
     if crumbs:
         parts = [f'<a href="{c.url(h)}">{e(n)}</a>' if h else f"<span>{e(n)}</span>" for n, h in crumbs]
@@ -301,7 +301,7 @@ def hero(c, word, title, body="", cta=None, kicker="", crumbs=None, extra="", ta
       {cta_html}
     </div>
     <div class="hero-tag micro">{tag_html}</div>
-    {wordmark(word)}
+    {word_html or wordmark(word)}
   </section>
 </div></div>'''
 
@@ -688,7 +688,8 @@ def build_home():
                 {"label": "Get in touch", "href": CONTACT_HREF},
                 extra=f'<div class="hero-badges">{badges}</div>',
                 title_html=f'{e(h["eyebrow"])} <span class="fade">{e(h["title"])}</span>',
-                tag=["Smart software systems", "& intelligent solutions", "Abuja · Worldwide"])
+                tag=["Smart software systems", "& intelligent solutions", "Abuja · Worldwide"],
+                word_html='<p class="wordmark wordmark--full" aria-hidden="true">Reconnaissan<span class="trail">ce</span></p>')
 
     # 1. About + stats (white panel rising over the hero)
     about = "".join(f"<p>{e(p)}</p>" for p in h["about_body"])
