@@ -316,6 +316,10 @@ def hero(c, word, title, body="", cta=None, kicker="", crumbs=None, extra="", ta
     return f'''
 <div class="hero-wrap"><div class="frame">
   <section class="hero on-dark" aria-labelledby="page-title">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="{c.asset("video/hero-poster.jpg")}" aria-hidden="true" tabindex="-1">
+      <source src="{c.asset("video/hero.webm")}" type="video/webm">
+      <source src="{c.asset("video/hero.mp4")}" type="video/mp4">
+    </video>
     {extra}
     <div class="hero-copy">
       {crumbs_html}

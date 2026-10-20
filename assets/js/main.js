@@ -136,5 +136,19 @@
     });
   });
 
+  // ---------- hero video: respect reduced-motion / data-saver, and pause off-screen
+  $$('.hero-video').forEach((video) => {
+    const saveData = navigator.connection && navigator.connection.saveData;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || saveData) {
+      video.removeAttribute('autoplay'); video.pause(); video.preload = 'none';
+      return;
+    }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([en]) => {
+        if (en.isIntersecting) video.play().catch(() => {}); else video.pause();
+      }).observe(video);
+    }
+  });
+
   $$('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
 })();
