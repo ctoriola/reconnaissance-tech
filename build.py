@@ -775,6 +775,8 @@ def clients_block(c, eyebrow, title, logos_on=True, quotes_on=True, first=False)
         (f'<a href="{e(cl["href"])}" target="_blank" rel="noopener" title="{e(cl["name"])}">' if cl["href"] else f'<div title="{e(cl["name"])}">')
         + f'<img src="{c.asset("img/" + cl["logo"])}" alt="{e(cl["name"])} logo" loading="lazy">'
         + ("</a>" if cl["href"] else "</div>") for cl in SITE["clients"])
+    # second copy for the seamless loop: hidden from assistive tech and the tab order
+    logos_dup = logos.replace('<a href', '<a tabindex="-1" href').replace(' logo" loading', '" loading').replace('alt="', 'alt="" data-alt="')
     quotes = "".join(f'''<figure class="quote" style="margin:0">
         <div style="display:grid;gap:12px">{DOTS}<h3>{e(t["title"])}</h3><blockquote>{e(t["quote"])}</blockquote></div>
         <footer><span>{f"<strong>{e(t['name'])}</strong>" if t["name"] else ""}{e(", ".join(x for x in [t["org"], t["place"]] if x))}</span></footer>
@@ -782,7 +784,7 @@ def clients_block(c, eyebrow, title, logos_on=True, quotes_on=True, first=False)
     return f'''
 <section class="{'rise' if first else 'section--tight'}"><div class="frame"><div class="panel reveal">
   {head_block({"eyebrow": eyebrow, "title": title})}
-  {f'<div class="logos">{logos}</div>' if logos_on else ""}
+  {f'<div class="marquee"><div class="marquee-track"><div class="logos logos--row">{logos}</div><div class="logos logos--row" aria-hidden="true">{logos_dup}</div></div></div>' if logos_on else ""}
   {f'<div class="quotes">{quotes}</div>' if quotes_on else ""}
 </div></div></section>'''
 
