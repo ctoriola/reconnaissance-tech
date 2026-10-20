@@ -264,6 +264,29 @@ def document(c, title, description, body, current=""):
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <!-- horizontal-only blur for the hero wordmark: a real motion smear that tapers off -->
+  <filter id="motion-lg" x="-20%" y="-40%" width="280%" height="180%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5 3" result="near"/>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="16 6" result="mid0"/>
+    <feOffset in="mid0" dx="18" result="mid1"/>
+    <feComponentTransfer in="mid1" result="mid"><feFuncA type="linear" slope=".75"/></feComponentTransfer>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="34 10" result="far0"/>
+    <feOffset in="far0" dx="48" result="far1"/>
+    <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
+    <feMerge><feMergeNode in="far"/><feMergeNode in="mid"/><feMergeNode in="near"/></feMerge>
+  </filter>
+  <filter id="motion-sm" x="-20%" y="-40%" width="280%" height="180%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2 1.2" result="near"/>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="6.4 2.4" result="mid0"/>
+    <feOffset in="mid0" dx="7.2" result="mid1"/>
+    <feComponentTransfer in="mid1" result="mid"><feFuncA type="linear" slope=".75"/></feComponentTransfer>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="13.6 4" result="far0"/>
+    <feOffset in="far0" dx="19.2" result="far1"/>
+    <feComponentTransfer in="far1" result="far"><feFuncA type="linear" slope=".45"/></feComponentTransfer>
+    <feMerge><feMergeNode in="far"/><feMergeNode in="mid"/><feMergeNode in="near"/></feMerge>
+  </filter>
+</svg>
 {header(c, current)}
 <main id="main">
 {body}
